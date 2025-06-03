@@ -1,6 +1,6 @@
 # Awesome-Agent
 
-Awesome-agent 是一个基于[Smolagents](Smolagents)s实现的智能代理项目，可以根据关键词从Arxiv上爬取相应论文，并进行分类整理形成类似Awesome-XXX的README文件，此外还实现了简单的RAG功能，用于回答相应论文相关的问题。
+Awesome-agent 是一个基于[Smolagents](Smolagents)实现的智能代理项目，可以根据关键词从Arxiv上爬取相应论文，并进行分类整理形成类似Awesome-XXX的README文件，此外还实现了简单的RAG功能，用于回答相应论文相关的问题。
 
 
 

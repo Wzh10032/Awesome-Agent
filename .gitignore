@@ -1,0 +1,8 @@
+.DS_Store
+*.pt
+*.pth
+*.safetensors
+*.bin
+__pycache__/
+*.env
+log/

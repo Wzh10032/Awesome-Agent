@@ -1,0 +1,131 @@
+[
+    {
+        "title": "Lost in Translation: Large Language Models in Non-English Content Analysis",
+        "authors": [
+            "Gabriel Nicholas",
+            "Aliya Bhatia"
+        ],
+        "abstract": "In recent years, large language models (e.g., Open AI's GPT-4, Meta's LLaMa,\nGoogle's PaLM) have become the dominant approach for building AI systems to\nanalyze and generate language online. However, the automated systems that\nincreasingly mediate our interactions online -- such as chatbots, content\nmoderation systems, and search engines -- are primarily designed for and work\nfar more effectively in English than in the world's other 7,000 languages.\nRecently, researchers and technology companies have attempted to extend the\ncapabilities of large language models into languages other than English by\nbuilding what are called multilingual language models.\n  In this paper, we explain how these multilingual language models work and\nexplore their capabilities and limits. Part I provides a simple technical\nexplanation of how large language models work, why there is a gap in available\ndata between English and other languages, and how multilingual language models\nattempt to bridge that gap. Part II accounts for the challenges of doing\ncontent analysis with large language models in general and multilingual\nlanguage models in particular. Part III offers recommendations for companies,\nresearchers, and policymakers to keep in mind when considering researching,\ndeveloping and deploying large and multilingual language models.",
+        "published": "2023-06-12 19:10:47",
+        "updated": "2023-06-12 19:10:47",
+        "arxiv_id": "2306.07377v1",
+        "pdf_url": "http://arxiv.org/pdf/2306.07377v1",
+        "filtered": true,
+        "classification": "Multilingual Language Models"
+    },
+    {
+        "title": "Cedille: A large autoregressive French language model",
+        "authors": [
+            "Martin Müller",
+            "Florian Laurent"
+        ],
+        "abstract": "Scaling up the size and training of autoregressive language models has\nenabled novel ways of solving Natural Language Processing tasks using zero-shot\nand few-shot learning. While extreme-scale language models such as GPT-3 offer\nmultilingual capabilities, zero-shot learning for languages other than English\nremain largely unexplored. Here, we introduce Cedille, a large open source\nauto-regressive language model, specifically trained for the French language.\nOur results show that Cedille outperforms existing French language models and\nis competitive with GPT-3 on a range of French zero-shot benchmarks.\nFurthermore, we provide an in-depth comparison of the toxicity exhibited by\nthese models, showing that Cedille marks an improvement in language model\nsafety thanks to dataset filtering.",
+        "published": "2022-02-07 17:40:43",
+        "updated": "2022-02-07 17:40:43",
+        "arxiv_id": "2202.03371v1",
+        "pdf_url": "http://arxiv.org/pdf/2202.03371v1",
+        "filtered": true,
+        "classification": "Monolingual Language Models"
+    },
+    {
+        "title": "How Good are Commercial Large Language Models on African Languages?",
+        "authors": [
+            "Jessica Ojo",
+            "Kelechi Ogueji"
+        ],
+        "abstract": "Recent advancements in Natural Language Processing (NLP) has led to the\nproliferation of large pretrained language models. These models have been shown\nto yield good performance, using in-context learning, even on unseen tasks and\nlanguages. They have also been exposed as commercial APIs as a form of\nlanguage-model-as-a-service, with great adoption. However, their performance on\nAfrican languages is largely unknown. We present a preliminary analysis of\ncommercial large language models on two tasks (machine translation and text\nclassification) across eight African languages, spanning different language\nfamilies and geographical areas. Our results suggest that commercial language\nmodels produce below-par performance on African languages. We also find that\nthey perform better on text classification than machine translation. In\ngeneral, our findings present a call-to-action to ensure African languages are\nwell represented in commercial large language models, given their growing\npopularity.",
+        "published": "2023-05-11 02:29:53",
+        "updated": "2023-05-11 02:29:53",
+        "arxiv_id": "2305.06530v1",
+        "pdf_url": "http://arxiv.org/pdf/2305.06530v1",
+        "filtered": true,
+        "classification": "African Languages in LLMs"
+    },
+    {
+        "title": "Goldfish: Monolingual Language Models for 350 Languages",
+        "authors": [
+            "Tyler A. Chang",
+            "Catherine Arnett",
+            "Zhuowen Tu",
+            "Benjamin K. Bergen"
+        ],
+        "abstract": "For many low-resource languages, the only available language models are large\nmultilingual models trained on many languages simultaneously. However, using\nFLORES perplexity as a metric, we find that these models perform worse than\nbigrams for many languages (e.g. 24% of languages in XGLM 4.5B; 43% in BLOOM\n7.1B). To facilitate research that focuses on low-resource languages, we\npre-train and release Goldfish, a suite of monolingual autoregressive\nTransformer language models up to 125M parameters for 350 languages. The\nGoldfish reach lower FLORES perplexities than BLOOM, XGLM, and MaLA-500 on 98\nof 204 FLORES languages, despite each Goldfish model being over 10x smaller.\nHowever, the Goldfish significantly underperform larger multilingual models on\nreasoning benchmarks, suggesting that for low-resource languages,\nmultilinguality primarily improves general reasoning abilities rather than\nbasic text generation. We release models trained on 5MB (350 languages), 10MB\n(288 languages), 100MB (166 languages), and 1GB (83 languages) of text data\nwhere available. The Goldfish models are available as baselines, fine-tuning\nsources, or augmentations to existing models in low-resource NLP research, and\nthey are further useful for crosslinguistic studies requiring maximally\ncomparable models across languages.",
+        "published": "2024-08-19 22:31:21",
+        "updated": "2024-08-19 22:31:21",
+        "arxiv_id": "2408.10441v1",
+        "pdf_url": "http://arxiv.org/pdf/2408.10441v1",
+        "filtered": true,
+        "classification": "Low-Resource Monolingual Models"
+    },
+    {
+        "title": "Modelling Language",
+        "authors": [
+            "Jumbly Grindrod"
+        ],
+        "abstract": "This paper argues that large language models have a valuable scientific role\nto play in serving as scientific models of a language. Linguistic study should\nnot only be concerned with the cognitive processes behind linguistic\ncompetence, but also with language understood as an external, social entity.\nOnce this is recognized, the value of large language models as scientific\nmodels becomes clear. This paper defends this position against a number of\narguments to the effect that language models provide no linguistic insight. It\nalso draws upon recent work in philosophy of science to show how large language\nmodels could serve as scientific models.",
+        "published": "2024-04-15 08:40:01",
+        "updated": "2024-04-15 08:40:01",
+        "arxiv_id": "2404.09579v1",
+        "pdf_url": "http://arxiv.org/pdf/2404.09579v1",
+        "filtered": true,
+        "classification": "Scientific Models of Language"
+    },
+    {
+        "title": "LLaMA-Reg: Using LLaMA 2 for Unsupervised Medical Image Registration",
+        "authors": [
+            "Mingrui Ma",
+            "Yu Yang"
+        ],
+        "abstract": "Medical image registration is an essential topic in medical image analysis.\nIn this paper, we propose a method for medical image registration using a\npretrained large language model. We find that using the pretrained large\nlanguage model to encode deep features of the medical images in the\nregistration model can effectively improve image registration accuracy,\nindicating the great potential of the large language model in medical image\nregistration tasks. We use dual encoders to perform deep feature extraction on\nimage pairs and then input the features into the pretrained large language\nmodel. To adapt the large language model to our registration task, the weights\nof the large language model are frozen in the registration model, and an\nadapter is utilized to fine-tune the large language model, which aims at (a)\nmapping the visual tokens to the language space before the large language model\ncomputing, (b) project the modeled language tokens output from the large\nlanguage model to the visual space. Our method combines output features from\nthe fine-tuned large language model with the features output from each encoder\nlayer to gradually generate the deformation fields required for registration in\nthe decoder. To demonstrate the effectiveness of the large prediction model in\nregistration tasks, we conducted experiments on knee and brain MRI and achieved\nstate-of-the-art results.",
+        "published": "2024-05-29 05:26:25",
+        "updated": "2024-05-29 05:26:25",
+        "arxiv_id": "2405.18774v1",
+        "pdf_url": "http://arxiv.org/pdf/2405.18774v1",
+        "filtered": true,
+        "classification": "Multimodal Instruction Tuning"
+    },
+    {
+        "title": "A Survey of Large Language Models for European Languages",
+        "authors": [
+            "Wazir Ali",
+            "Sampo Pyysalo"
+        ],
+        "abstract": "Large Language Models (LLMs) have gained significant attention due to their\nhigh performance on a wide range of natural language tasks since the release of\nChatGPT. The LLMs learn to understand and generate language by training\nbillions of model parameters on vast volumes of text data. Despite being a\nrelatively new field, LLM research is rapidly advancing in various directions.\nIn this paper, we present an overview of LLM families, including LLaMA, PaLM,\nGPT, and MoE, and the methods developed to create and enhance LLMs for official\nEuropean Union (EU) languages. We provide a comprehensive summary of common\nmonolingual and multilingual datasets used for pretraining large language\nmodels.",
+        "published": "2024-08-27 13:10:05",
+        "updated": "2024-08-28 03:56:37",
+        "arxiv_id": "2408.15040v2",
+        "pdf_url": "http://arxiv.org/pdf/2408.15040v2",
+        "filtered": true,
+        "classification": "European Languages in LLMs"
+    },
+    {
+        "title": "Beyond the limitations of any imaginable mechanism: large language models and psycholinguistics",
+        "authors": [
+            "Conor Houghton",
+            "Nina Kazanina",
+            "Priyanka Sukumaran"
+        ],
+        "abstract": "Large language models are not detailed models of human linguistic processing.\nThey are, however, extremely successful at their primary task: providing a\nmodel for language. For this reason and because there are no animal models for\nlanguage, large language models are important in psycholinguistics: they are\nuseful as a practical tool, as an illustrative comparative, and\nphilosophically, as a basis for recasting the relationship between language and\nthought.",
+        "published": "2023-02-28 20:49:38",
+        "updated": "2023-02-28 20:49:38",
+        "arxiv_id": "2303.00077v1",
+        "pdf_url": "http://arxiv.org/pdf/2303.00077v1",
+        "filtered": true,
+        "classification": "Psycholinguistics and LLMs"
+    },
+    {
+        "title": "Enhance Reasoning Ability of Visual-Language Models via Large Language Models",
+        "authors": [
+            "Yueting Yang",
+            "Xintong Zhang",
+            "Wenjuan Han"
+        ],
+        "abstract": "Pre-trained visual language models (VLM) have shown excellent performance in\nimage caption tasks. However, it sometimes shows insufficient reasoning\nability. In contrast, large language models (LLMs) emerge with powerful\nreasoning capabilities. Therefore, we propose a method called TReE, which\ntransfers the reasoning ability of a large language model to a visual language\nmodel in zero-shot scenarios. TReE contains three stages: observation,\nthinking, and re-thinking. Observation stage indicates that VLM obtains the\noverall information of the relative image. Thinking stage combines the image\ninformation and task description as the prompt of the LLM, inference with the\nrationals. Re-Thinking stage learns from rationale and then inference the final\nresult through VLM.",
+        "published": "2023-05-22 17:33:44",
+        "updated": "2023-05-22 17:33:44",
+        "arxiv_id": "2305.13267v1",
+        "pdf_url": "http://arxiv.org/pdf/2305.13267v1",
+        "filtered": true,
+        "classification": "Multimodal Reasoning"
+    }
+]

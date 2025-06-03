@@ -1,0 +1,162 @@
+[
+    {
+        "title": "NTIRE 2022 Challenge on Stereo Image Super-Resolution: Methods and Results",
+        "authors": [
+            "Longguang Wang",
+            "Yulan Guo",
+            "Yingqian Wang",
+            "Juncheng Li",
+            "Shuhang Gu",
+            "Radu Timofte"
+        ],
+        "abstract": "In this paper, we summarize the 1st NTIRE challenge on stereo image\nsuper-resolution (restoration of rich details in a pair of low-resolution\nstereo images) with a focus on new solutions and results. This challenge has 1\ntrack aiming at the stereo image super-resolution problem under a standard\nbicubic degradation. In total, 238 participants were successfully registered,\nand 21 teams competed in the final testing phase. Among those participants, 20\nteams successfully submitted results with PSNR (RGB) scores better than the\nbaseline. This challenge establishes a new benchmark for stereo image SR.",
+        "published": "2022-04-20 02:55:37",
+        "updated": "2022-04-20 02:55:37",
+        "arxiv_id": "2204.09197v1",
+        "pdf_url": "http://arxiv.org/pdf/2204.09197v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Multi-Reference Image Super-Resolution: A Posterior Fusion Approach",
+        "authors": [
+            "Ke Zhao",
+            "Haining Tan",
+            "Tsz Fung Yau"
+        ],
+        "abstract": "Reference-based Super-resolution (RefSR) approaches have recently been\nproposed to overcome the ill-posed problem of image super-resolution by\nproviding additional information from a high-resolution image. Multi-reference\nsuper-resolution extends this approach by allowing more information to be\nincorporated. This paper proposes a 2-step-weighting posterior fusion approach\nto combine the outputs of RefSR models with multiple references. Extensive\nexperiments on the CUFED5 dataset demonstrate that the proposed methods can be\napplied to various state-of-the-art RefSR models to get a consistent\nimprovement in image quality.",
+        "published": "2022-12-20 04:15:03",
+        "updated": "2022-12-20 04:15:03",
+        "arxiv_id": "2212.09988v1",
+        "pdf_url": "http://arxiv.org/pdf/2212.09988v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Combination of Single and Multi-frame Image Super-resolution: An Analytical Perspective",
+        "authors": [
+            "Mohammad Mahdi Afrasiabi",
+            "Reshad Hosseini",
+            "Aliazam Abbasfar"
+        ],
+        "abstract": "Super-resolution is the process of obtaining a high-resolution image from one\nor more low-resolution images. Single image super-resolution (SISR) and\nmulti-frame super-resolution (MFSR) methods have been evolved almost\nindependently for years. A neglected study in this field is the theoretical\nanalysis of finding the optimum combination of SISR and MFSR. To fill this gap,\nwe propose a novel theoretical analysis based on the iterative shrinkage and\nthresholding algorithm. We implement and compare several approaches for\ncombining SISR and MFSR, and simulation results support the finding of our\ntheoretical analysis, both quantitatively and qualitatively.",
+        "published": "2023-03-06 15:14:16",
+        "updated": "2023-03-06 15:14:16",
+        "arxiv_id": "2303.03212v1",
+        "pdf_url": "http://arxiv.org/pdf/2303.03212v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Blind Motion Deblurring Super-Resolution: When Dynamic Spatio-Temporal Learning Meets Static Image Understanding",
+        "authors": [
+            "Wenjia Niu",
+            "Kaihao Zhang",
+            "Wenhan Luo",
+            "Yiran Zhong"
+        ],
+        "abstract": "Single-image super-resolution (SR) and multi-frame SR are two ways to super\nresolve low-resolution images. Single-Image SR generally handles each image\nindependently, but ignores the temporal information implied in continuing\nframes. Multi-frame SR is able to model the temporal dependency via capturing\nmotion information. However, it relies on neighbouring frames which are not\nalways available in the real world. Meanwhile, slight camera shake easily\ncauses heavy motion blur on long-distance-shot low-resolution images. To\naddress these problems, a Blind Motion Deblurring Super-Reslution Networks,\nBMDSRNet, is proposed to learn dynamic spatio-temporal information from single\nstatic motion-blurred images. Motion-blurred images are the accumulation over\ntime during the exposure of cameras, while the proposed BMDSRNet learns the\nreverse process and uses three-streams to learn Bidirectional spatio-temporal\ninformation based on well designed reconstruction loss functions to recover\nclean high-resolution images. Extensive experiments demonstrate that the\nproposed BMDSRNet outperforms recent state-of-the-art methods, and has the\nability to simultaneously deal with image deblurring and SR.",
+        "published": "2021-05-27 11:52:45",
+        "updated": "2021-10-19 02:38:35",
+        "arxiv_id": "2105.13077v2",
+        "pdf_url": "http://arxiv.org/pdf/2105.13077v2",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Infrared Image Super-Resolution: Systematic Review, and Future Trends",
+        "authors": [
+            "Yongsong Huang",
+            "Tomo Miyazaki",
+            "Xiaofeng Liu",
+            "Shinichiro Omachi"
+        ],
+        "abstract": "Image Super-Resolution (SR) is essential for a wide range of computer vision\nand image processing tasks. Investigating infrared (IR) image (or thermal\nimages) super-resolution is a continuing concern within the development of deep\nlearning. This survey aims to provide a comprehensive perspective of IR image\nsuper-resolution, including its applications, hardware imaging system dilemmas,\nand taxonomy of image processing methodologies. In addition, the datasets and\nevaluation metrics in IR image super-resolution tasks are also discussed.\nFurthermore, the deficiencies in current technologies and possible promising\ndirections for the community to explore are highlighted. To cope with the rapid\ndevelopment in this field, we intend to regularly update the relevant excellent\nwork at \\url{https://github.com/yongsongH/Infrared_Image_SR_Survey",
+        "published": "2022-12-22 08:33:32",
+        "updated": "2025-02-20 08:23:07",
+        "arxiv_id": "2212.12322v4",
+        "pdf_url": "http://arxiv.org/pdf/2212.12322v4",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Towards Arbitrary-scale Histopathology Image Super-resolution: An Efficient Dual-branch Framework based on Implicit Self-texture Enhancement",
+        "authors": [
+            "Linhao Qu",
+            "Minghong Duan",
+            "Zhiwei Yang",
+            "Manning Wang",
+            "Zhijian Song"
+        ],
+        "abstract": "Existing super-resolution models for pathology images can only work in fixed\ninteger magnifications and have limited performance. Though implicit neural\nnetwork-based methods have shown promising results in arbitrary-scale\nsuper-resolution of natural images, it is not effective to directly apply them\nin pathology images, because pathology images have special fine-grained image\ntextures different from natural images. To address this challenge, we propose a\ndual-branch framework with an efficient self-texture enhancement mechanism for\narbitrary-scale super-resolution of pathology images. Extensive experiments on\ntwo public datasets show that our method outperforms both existing fixed-scale\nand arbitrary-scale algorithms. To the best of our knowledge, this is the first\nwork to achieve arbitrary-scale super-resolution in the field of pathology\nimages. Codes will be available.",
+        "published": "2023-04-09 13:38:18",
+        "updated": "2023-04-09 13:38:18",
+        "arxiv_id": "2304.04238v1",
+        "pdf_url": "http://arxiv.org/pdf/2304.04238v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Unsupervised Super-Resolution: Creating High-Resolution Medical Images from Low-Resolution Anisotropic Examples",
+        "authors": [
+            "Jörg Sander",
+            "Bob D. de Vos",
+            "Ivana Išgum"
+        ],
+        "abstract": "Although high resolution isotropic 3D medical images are desired in clinical\npractice, their acquisition is not always feasible. Instead, lower resolution\nimages are upsampled to higher resolution using conventional interpolation\nmethods. Sophisticated learning-based super-resolution approaches are\nfrequently unavailable in clinical setting, because such methods require\ntraining with high-resolution isotropic examples. To address this issue, we\npropose a learning-based super-resolution approach that can be trained using\nsolely anisotropic images, i.e. without high-resolution ground truth data. The\nmethod exploits the latent space, generated by autoencoders trained on\nanisotropic images, to increase spatial resolution in low-resolution images.\nThe method was trained and evaluated using 100 publicly available cardiac cine\nMR scans from the Automated Cardiac Diagnosis Challenge (ACDC). The\nquantitative results show that the proposed method performs better than\nconventional interpolation methods. Furthermore, the qualitative results\nindicate that especially finer cardiac structures are synthesized with high\nquality. The method has the potential to be applied to other anatomies and\nmodalities and can be easily applied to any 3D anisotropic medical image\ndataset.",
+        "published": "2020-10-25 17:41:54",
+        "updated": "2020-10-25 17:41:54",
+        "arxiv_id": "2010.13172v1",
+        "pdf_url": "http://arxiv.org/pdf/2010.13172v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Real-World Single Image Super-Resolution: A Brief Review",
+        "authors": [
+            "Honggang Chen",
+            "Xiaohai He",
+            "Linbo Qing",
+            "Yuanyuan Wu",
+            "Chao Ren",
+            "Ce Zhu"
+        ],
+        "abstract": "Single image super-resolution (SISR), which aims to reconstruct a\nhigh-resolution (HR) image from a low-resolution (LR) observation, has been an\nactive research topic in the area of image processing in recent decades.\nParticularly, deep learning-based super-resolution (SR) approaches have drawn\nmuch attention and have greatly improved the reconstruction performance on\nsynthetic data. Recent studies show that simulation results on synthetic data\nusually overestimate the capacity to super-resolve real-world images. In this\ncontext, more and more researchers devote themselves to develop SR approaches\nfor realistic images. This article aims to make a comprehensive review on\nreal-world single image super-resolution (RSISR). More specifically, this\nreview covers the critical publically available datasets and assessment metrics\nfor RSISR, and four major categories of RSISR methods, namely the degradation\nmodeling-based RSISR, image pairs-based RSISR, domain translation-based RSISR,\nand self-learning-based RSISR. Comparisons are also made among representative\nRSISR methods on benchmark datasets, in terms of both reconstruction quality\nand computational efficiency. Besides, we discuss challenges and promising\nresearch topics on RSISR.",
+        "published": "2021-03-03 12:41:44",
+        "updated": "2021-03-03 12:41:44",
+        "arxiv_id": "2103.02368v1",
+        "pdf_url": "http://arxiv.org/pdf/2103.02368v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "Super-Resolution through StyleGAN Regularized Latent Search: A Realism-Fidelity Trade-off",
+        "authors": [
+            "Marzieh Gheisari",
+            "Auguste Genovesio"
+        ],
+        "abstract": "This paper addresses the problem of super-resolution: constructing a highly\nresolved (HR) image from a low resolved (LR) one. Recent unsupervised\napproaches search the latent space of a StyleGAN pre-trained on HR images, for\nthe image that best downscales to the input LR image. However, they tend to\nproduce out-of-domain images and fail to accurately reconstruct HR images that\nare far from the original domain. Our contribution is twofold. Firstly, we\nintroduce a new regularizer to constrain the search in the latent space,\nensuring that the inverted code lies in the original image manifold. Secondly,\nwe further enhanced the reconstruction through expanding the image prior around\nthe optimal latent code. Our results show that the proposed approach recovers\nrealistic high-quality images for large magnification factors. Furthermore, for\nlow magnification factors, it can still reconstruct details that the generator\ncould not have produced otherwise. Altogether, our approach achieves a good\ntrade-off between fidelity and realism for the super-resolution task.",
+        "published": "2023-11-28 16:27:24",
+        "updated": "2023-11-28 16:27:24",
+        "arxiv_id": "2311.16923v1",
+        "pdf_url": "http://arxiv.org/pdf/2311.16923v1",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    },
+    {
+        "title": "PIRM2018 Challenge on Spectral Image Super-Resolution: Dataset and Study",
+        "authors": [
+            "Mehrdad Shoeiby",
+            "Antonio Robles-Kelly",
+            "Ran Wei",
+            "Radu Timofte"
+        ],
+        "abstract": "This paper introduces a newly collected and novel dataset (StereoMSI) for\nexample-based single and colour-guided spectral image super-resolution. The\ndataset was first released and promoted during the PIRM2018 spectral image\nsuper-resolution challenge. To the best of our knowledge, the dataset is the\nfirst of its kind, comprising 350 registered colour-spectral image pairs. The\ndataset has been used for the two tracks of the challenge and, for each of\nthese, we have provided a split into training, validation and testing. This\narrangement is a result of the challenge structure and phases, with the first\ntrack focusing on example-based spectral image super-resolution and the second\none aiming at exploiting the registered stereo colour imagery to improve the\nresolution of the spectral images. Each of the tracks and splits has been\nselected to be consistent across a number of image quality metrics. The dataset\nis quite general in nature and can be used for a wide variety of applications\nin addition to the development of spectral image super-resolution methods.",
+        "published": "2019-04-01 02:41:08",
+        "updated": "2019-05-01 07:12:43",
+        "arxiv_id": "1904.00540v2",
+        "pdf_url": "http://arxiv.org/pdf/1904.00540v2",
+        "filtered": true,
+        "classification": "Image Super-Resolution"
+    }
+]

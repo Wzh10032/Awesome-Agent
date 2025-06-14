@@ -6,9 +6,6 @@ from smolagents import (
     WebSearchTool,
     OpenAIServerModel,
 )
-from langchain_community.tools.google_scholar import GoogleScholarQueryRun
-from langchain_community.utilities.google_scholar import GoogleScholarAPIWrapper
-from langchain_community.utilities import ArxivAPIWrapper
 # from langchain.agents import load_tools
 from tools.arxiv_tools import (
     arxiv_paper_search, 

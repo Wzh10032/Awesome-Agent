@@ -1,6 +1,6 @@
 # Awesome-Agent
 
-Awesome-agent 是一个基于[Smolagents](Smolagents)实现的智能代理项目，可以根据关键词从Arxiv上爬取相应论文，并进行分类整理形成类似Awesome-XXX的README文件，此外还实现了简单的RAG功能，用于回答相应论文相关的问题。
+Awesome-agent 是一个基于[Smolagents](Smolagents)实现的智能代理项目，可以根据关键词从Arxiv上爬取相应论文，并进行分类整理形成类似Awesome-XXX的README文件（例如[Object detection](./paper_dataset/Object%20detection/)），此外还实现了简单的RAG功能，用于回答相应论文相关的问题。
 
 
 
@@ -31,6 +31,7 @@ python gradio_gui_show.py
 <img src=".\assets\result.png" width="800">
 
 ## Acknowledgement
-We adopt the following open-sourced projects:
+我们采用了以下开源项目:
 - [Smolagents](https://github.com/smol-ai/smolagents)
-- [zero_nlp](https://github.com/yuanzhoulvpi2017/zero_nlp/tree/main/smolagent_tutorial) 
+- [zero_nlp](https://github.com/yuanzhoulvpi2017/zero_nlp/tree/main/smolagent_tutorial)
+- [arxiv.py](https://github.com/lukasschwab/arxiv.py)

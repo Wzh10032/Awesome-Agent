@@ -90,7 +90,7 @@ def generate_readme(json_path, output_path="README.md"):
                     code_link = 'https://' + code_link.lstrip('/')
                 md_content += f"💻 **Code**: [Link]({code_link})\n\n"
             
-            md_content += "💡 **Summary**:\n> " + paper['summary'].replace('\n', '\n> ') + "\n\n"
+            md_content += "🤖 **AI Summary**:\n> " + paper['summary'].replace('\n', '\n> ') + "\n\n"
             md_content += "---\n\n"
     
     # 写入文件

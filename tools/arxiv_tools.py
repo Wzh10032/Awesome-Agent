@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv() 
 
-
+MAX_RESULTS = 50  # arXiv API最大返回结果数量
 BATCH_SIZE = 20  # 每次处理BATCH_SIZE篇论文
 client = AsyncOpenAI(
     api_key=os.getenv("QWEN_KEY"),
@@ -35,14 +35,13 @@ def arxiv_paper_search(topic: str, keywords: str) -> str:
     result = fetch_arxiv_papers(topic, keywords)
     return result
 
-def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
+def fetch_arxiv_papers(topic: str, keywords: str) -> str:
     """
     从arXiv API获取指定主题和关键词的论文数据，并保存到JSON文件
     
     参数:
     topic (str): 研究主题 (如："quantum computing")
     keywords (str): 关键词列表 (如："quantum")
-    max_results (int): 最大返回结果数量
     
     返回:
     str: 操作状态信息
@@ -69,7 +68,7 @@ def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
     try:
         search = arxiv.Search(
             query = query,
-            max_results = max_results,
+            max_results = MAX_RESULTS,
             sort_by = arxiv.SortCriterion.Relevance
             )
         # 提取论文信息

@@ -11,7 +11,7 @@
         "arxiv_id": "2204.08828v1",
         "pdf_url": "http://arxiv.org/pdf/2204.08828v1",
         "filtered": true,
-        "summary": "This paper introduces the Detect and Describe (DaD) framework, which extends traditional object detection by predicting detailed attributes of objects such as material and shape. The model is trained on aPascal and achieves high accuracy in attribute prediction, demonstrating its ability to describe unseen objects.",
+        "summary": "This paper introduces Detect and Describe (DaD), a deep learning framework that extends object detection to infer object attributes, achieving high accuracy in attribute prediction on the aPascal dataset.",
         "classification": "Object Attribute Prediction"
     },
     {
@@ -27,7 +27,7 @@
         "arxiv_id": "2212.01424v1",
         "pdf_url": "http://arxiv.org/pdf/2212.01424v1",
         "filtered": true,
-        "summary": "The paper presents PROB, a probabilistic framework for open-world object detection that distinguishes between unknown objects and background. It outperforms existing methods in detecting both known and unknown objects, bridging the gap between traditional benchmarks and real-world scenarios.",
+        "summary": "The paper proposes PROB, a probabilistic framework for open-world object detection that improves detection of unknown objects by estimating objectness probability, outperforming existing methods on OWOD benchmarks.",
         "classification": "Open World Object Detection"
     },
     {
@@ -44,7 +44,7 @@
         "arxiv_id": "2407.05575v1",
         "pdf_url": "http://arxiv.org/pdf/2407.05575v1",
         "filtered": true,
-        "summary": "This work introduces RODD, a benchmark dataset for reflected object detection. It includes diverse images with annotations for both real and reflected objects, highlighting limitations of current models and providing baselines for future research in this underexplored area.",
+        "summary": "This work introduces RODD, a benchmark dataset for reflected object detection, addressing the underexplored area of detecting objects reflected in surfaces with diverse contexts.",
         "classification": "Specialized Object Detection"
     },
     {
@@ -62,7 +62,7 @@
         "arxiv_id": "2503.23249v1",
         "pdf_url": "http://arxiv.org/pdf/2503.23249v1",
         "filtered": true,
-        "summary": "A systematic literature review exploring the role of context in object detection. The study surveys various context-based approaches, categorizing them into different types of object detection tasks, offering insights and identifying gaps for future research.",
+        "summary": "A systematic literature review on context-based approaches in object detection, analyzing various methods and identifying gaps for future research in this domain.",
         "classification": "Contextual Object Detection"
     },
     {
@@ -81,7 +81,7 @@
         "arxiv_id": "2202.05930v1",
         "pdf_url": "http://arxiv.org/pdf/2202.05930v1",
         "filtered": true,
-        "summary": "The paper proposes GCRN, a graph contextual reasoning network for detecting out-of-context objects. It uses contextual cues from neighboring objects to improve detection accuracy, evaluated on a large-scale dataset created by adding OOC objects to COCO images.",
+        "summary": "The paper presents GCRN, a graph contextual reasoning network that uses contextual cues to detect out-of-context objects, improving performance on OOC detection benchmarks.",
         "classification": "Contextual Object Detection"
     },
     {
@@ -96,7 +96,7 @@
         "arxiv_id": "2303.01219v1",
         "pdf_url": "http://arxiv.org/pdf/2303.01219v1",
         "filtered": true,
-        "summary": "This paper introduces a coarse-to-fine framework for object detection in high-resolution images. It enhances small object detection while maintaining accuracy for larger objects, using a two-stage approach with down-sampled images and high-resolution chips.",
+        "summary": "A coarse-to-fine framework is proposed for detecting small objects in high-resolution images, enhancing detection accuracy while reducing computational cost.",
         "classification": "Specialized Object Detection"
     },
     {
@@ -113,7 +113,7 @@
         "arxiv_id": "1902.01466v1",
         "pdf_url": "http://arxiv.org/pdf/1902.01466v1",
         "filtered": true,
-        "summary": "TrackNet is proposed for simultaneous object detection and tracking in videos. It extends Faster R-CNN to predict 3D tubes enclosing moving objects, achieving promising results on the UA-DETRAC traffic video dataset.",
+        "summary": "TrackNet is introduced, a novel network structure that simultaneously detects and tracks objects in video segments, demonstrating promising results on traffic video analysis.",
         "classification": "Video Object Detection"
     },
     {
@@ -130,7 +130,7 @@
         "arxiv_id": "2003.00981v1",
         "pdf_url": "http://arxiv.org/pdf/2003.00981v1",
         "filtered": true,
-        "summary": "A Plug & Play convolutional regression tracker is introduced for video object detection. It reuses features from the detector, improving mAP scores with minimal speed reduction, evaluated on the ImageNet VID dataset.",
+        "summary": "A Plug & Play convolutional regression tracker is proposed for video object detection, enhancing performance on large-scale datasets like ImageNet VID.",
         "classification": "Video Object Detection"
     },
     {
@@ -146,8 +146,8 @@
         "arxiv_id": "1908.03673v1",
         "pdf_url": "http://arxiv.org/pdf/1908.03673v1",
         "filtered": true,
-        "summary": "This survey provides an overview of recent advances in deep learning-based object detection. It analyzes detection frameworks, learning strategies, and applications, covering factors like detector architectures and feature learning.",
-        "classification": "Comprehensive Survey"
+        "summary": "A comprehensive survey of recent advances in deep learning for object detection, covering detector architectures, feature learning, and applications.",
+        "classification": "Survey"
     },
     {
         "title": "Out-of-Distribution Detection for LiDAR-based 3D Object Detection",
@@ -167,7 +167,599 @@
         "arxiv_id": "2209.14435v1",
         "pdf_url": "http://arxiv.org/pdf/2209.14435v1",
         "filtered": true,
-        "summary": "The paper focuses on out-of-distribution detection for LiDAR-based 3D object detection. It adapts OOD detection methods to this task, proposing a feature extraction method and evaluating them on the KITTI dataset.",
+        "summary": "The paper focuses on out-of-distribution detection for LiDAR-based 3D object detection, adapting OOD methods and evaluating them on the KITTI dataset.",
+        "classification": "Out-of-Distribution Detection"
+    },
+    {
+        "title": "Metamorphic Testing for Object Detection Systems",
+        "authors": [
+            "Shuai Wang",
+            "Zhendong Su"
+        ],
+        "abstract": "Recent advances in deep neural networks (DNNs) have led to object detectors\nthat can rapidly process pictures or videos, and recognize the objects that\nthey contain. Despite the promising progress by industrial manufacturers such\nas Amazon and Google in commercializing deep learning-based object detection as\na standard computer vision service, object detection systems - similar to\ntraditional software - may still produce incorrect results. These errors, in\nturn, can lead to severe negative outcomes for the users of these object\ndetection systems. For instance, an autonomous driving system that fails to\ndetect pedestrians can cause accidents or even fatalities. However, principled,\nsystematic methods for testing object detection systems do not yet exist,\ndespite their importance.\n  To fill this critical gap, we introduce the design and realization of MetaOD,\nthe first metamorphic testing system for object detectors to effectively reveal\nerroneous detection results by commercial object detectors. To this end, we (1)\nsynthesize natural-looking images by inserting extra object instances into\nbackground images, and (2) design metamorphic conditions asserting the\nequivalence of object detection results between the original and synthetic\nimages after excluding the prediction results on the inserted objects. MetaOD\nis designed as a streamlined workflow that performs object extraction,\nselection, and insertion. Evaluated on four commercial object detection\nservices and four pretrained models provided by the TensorFlow API, MetaOD\nfound tens of thousands of detection defects in these object detectors. To\nfurther demonstrate the practical usage of MetaOD, we use the synthetic images\nthat cause erroneous detection results to retrain the model. Our results show\nthat the model performance is increased significantly, from an mAP score of 9.3\nto an mAP score of 10.5.",
+        "published": "2019-12-19 02:03:46",
+        "updated": "2019-12-19 02:03:46",
+        "arxiv_id": "1912.12162v1",
+        "pdf_url": "http://arxiv.org/pdf/1912.12162v1",
+        "filtered": true,
+        "summary": "MetaOD, a metamorphic testing system for object detectors, is introduced to reveal erroneous detection results in commercial object detection systems.",
+        "classification": "Testing"
+    },
+    {
+        "title": "Generative Region-Language Pretraining for Open-Ended Object Detection",
+        "authors": [
+            "Chuang Lin",
+            "Yi Jiang",
+            "Lizhen Qu",
+            "Zehuan Yuan",
+            "Jianfei Cai"
+        ],
+        "abstract": "In recent research, significant attention has been devoted to the\nopen-vocabulary object detection task, aiming to generalize beyond the limited\nnumber of classes labeled during training and detect objects described by\narbitrary category names at inference. Compared with conventional object\ndetection, open vocabulary object detection largely extends the object\ndetection categories. However, it relies on calculating the similarity between\nimage regions and a set of arbitrary category names with a pretrained\nvision-and-language model. This implies that, despite its open-set nature, the\ntask still needs the predefined object categories during the inference stage.\nThis raises the question: What if we do not have exact knowledge of object\ncategories during inference? In this paper, we call such a new setting as\ngenerative open-ended object detection, which is a more general and practical\nproblem. To address it, we formulate object detection as a generative problem\nand propose a simple framework named GenerateU, which can detect dense objects\nand generate their names in a free-form way. Particularly, we employ Deformable\nDETR as a region proposal generator with a language model translating visual\nregions to object names. To assess the free-form object detection task, we\nintroduce an evaluation method designed to quantitatively measure the\nperformance of generative outcomes. Extensive experiments demonstrate strong\nzero-shot detection performance of our GenerateU. For example, on the LVIS\ndataset, our GenerateU achieves comparable results to the open-vocabulary\nobject detection method GLIP, even though the category names are not seen by\nGenerateU during inference. Code is available at: https://\ngithub.com/FoundationVision/GenerateU .",
+        "published": "2024-03-15 10:52:39",
+        "updated": "2024-03-15 10:52:39",
+        "arxiv_id": "2403.10191v1",
+        "pdf_url": "http://arxiv.org/pdf/2403.10191v1",
+        "filtered": true,
+        "summary": "GenerateU is proposed, a generative framework for open-ended object detection that can detect dense objects and generate their names without predefined categories.",
+        "classification": "Open Vocabulary Object Detection"
+    },
+    {
+        "title": "Detective: An Attentive Recurrent Model for Sparse Object Detection",
+        "authors": [
+            "Amine Kechaou",
+            "Manuel Martinez",
+            "Monica Haurilet",
+            "Rainer Stiefelhagen"
+        ],
+        "abstract": "In this work, we present Detective - an attentive object detector that\nidentifies objects in images in a sequential manner. Our network is based on an\nencoder-decoder architecture, where the encoder is a convolutional neural\nnetwork, and the decoder is a convolutional recurrent neural network coupled\nwith an attention mechanism. At each iteration, our decoder focuses on the\nrelevant parts of the image using an attention mechanism, and then estimates\nthe object's class and the bounding box coordinates. Current object detection\nmodels generate dense predictions and rely on post-processing to remove\nduplicate predictions. Detective is a sparse object detector that generates a\nsingle bounding box per object instance. However, training a sparse object\ndetector is challenging, as it requires the model to reason at the instance\nlevel and not just at the class and spatial levels. We propose a training\nmechanism based on the Hungarian algorithm and a loss that balances the\nlocalization and classification tasks. This allows Detective to achieve\npromising results on the PASCAL VOC object detection dataset. Our experiments\ndemonstrate that sparse object detection is possible and has a great potential\nfor future developments in applications where the order of the objects to be\npredicted is of interest.",
+        "published": "2020-04-25 17:41:52",
+        "updated": "2020-04-25 17:41:52",
+        "arxiv_id": "2004.12197v1",
+        "pdf_url": "http://arxiv.org/pdf/2004.12197v1",
+        "filtered": true,
+        "summary": "Detective, an attentive recurrent model for sparse object detection, is presented, generating a single bounding box per object instance.",
+        "classification": "Sparse Object Detection"
+    },
+    {
+        "title": "RRPN: Radar Region Proposal Network for Object Detection in Autonomous Vehicles",
+        "authors": [
+            "Ramin Nabati",
+            "Hairong Qi"
+        ],
+        "abstract": "Region proposal algorithms play an important role in most state-of-the-art\ntwo-stage object detection networks by hypothesizing object locations in the\nimage. Nonetheless, region proposal algorithms are known to be the bottleneck\nin most two-stage object detection networks, increasing the processing time for\neach image and resulting in slow networks not suitable for real-time\napplications such as autonomous driving vehicles. In this paper we introduce\nRRPN, a Radar-based real-time region proposal algorithm for object detection in\nautonomous driving vehicles. RRPN generates object proposals by mapping Radar\ndetections to the image coordinate system and generating pre-defined anchor\nboxes for each mapped Radar detection point. These anchor boxes are then\ntransformed and scaled based on the object's distance from the vehicle, to\nprovide more accurate proposals for the detected objects. We evaluate our\nmethod on the newly released NuScenes dataset [1] using the Fast R-CNN object\ndetection network [2]. Compared to the Selective Search object proposal\nalgorithm [3], our model operates more than 100x faster while at the same time\nachieves higher detection precision and recall. Code has been made publicly\navailable at https://github.com/mrnabati/RRPN .",
+        "published": "2019-05-01 23:03:22",
+        "updated": "2019-05-15 14:45:23",
+        "arxiv_id": "1905.00526v2",
+        "pdf_url": "http://arxiv.org/pdf/1905.00526v2",
+        "filtered": true,
+        "summary": "RRPN, a radar-based region proposal network for autonomous vehicles, is introduced, providing faster and more accurate object proposals than Selective Search.",
         "classification": "Specialized Object Detection"
+    },
+    {
+        "title": "Rapid Detection of Aircrafts in Satellite Imagery based on Deep Neural Networks",
+        "authors": [
+            "Arsalan Tahir",
+            "Muhammad Adil",
+            "Arslan Ali"
+        ],
+        "abstract": "Object detection is one of the fundamental objectives in Applied Computer\nVision. In some of the applications, object detection becomes very challenging\nsuch as in the case of satellite image processing. Satellite image processing\nhas remained the focus of researchers in domains of Precision Agriculture,\nClimate Change, Disaster Management, etc. Therefore, object detection in\nsatellite imagery is one of the most researched problems in this domain. This\npaper focuses on aircraft detection. in satellite imagery using deep learning\ntechniques. In this paper, we used YOLO deep learning framework for aircraft\ndetection. This method uses satellite images collected by different sources as\nlearning for the model to perform detection. Object detection in satellite\nimages is mostly complex because objects have many variations, types, poses,\nsizes, complex and dense background. YOLO has some limitations for small size\nobjects (less than$\\sim$32 pixels per object), therefore we upsample the\nprediction grid to reduce the coarseness of the model and to accurately detect\nthe densely clustered objects. The improved model shows good accuracy and\nperformance on different unknown images having small, rotating, and dense\nobjects to meet the requirements in real-time.",
+        "published": "2021-04-21 18:13:16",
+        "updated": "2021-04-21 18:13:16",
+        "arxiv_id": "2104.11677v1",
+        "pdf_url": "http://arxiv.org/pdf/2104.11677v1",
+        "filtered": true,
+        "summary": "A method for rapid aircraft detection in satellite imagery using YOLO with upsampling for small objects is proposed, showing good accuracy on complex backgrounds.",
+        "classification": "Specialized Object Detection"
+    },
+    {
+        "title": "Focus-and-Detect: A Small Object Detection Framework for Aerial Images",
+        "authors": [
+            "Onur Can Koyun",
+            "Reyhan Kevser Keser",
+            "İbrahim Batuhan Akkaya",
+            "Behçet Uğur Töreyin"
+        ],
+        "abstract": "Despite recent advances, object detection in aerial images is still a\nchallenging task. Specific problems in aerial images makes the detection\nproblem harder, such as small objects, densely packed objects, objects in\ndifferent sizes and with different orientations. To address small object\ndetection problem, we propose a two-stage object detection framework called\n\"Focus-and-Detect\". The first stage which consists of an object detector\nnetwork supervised by a Gaussian Mixture Model, generates clusters of objects\nconstituting the focused regions. The second stage, which is also an object\ndetector network, predicts objects within the focal regions. Incomplete Box\nSuppression (IBS) method is also proposed to overcome the truncation effect of\nregion search approach. Results indicate that the proposed two-stage framework\nachieves an AP score of 42.06 on VisDrone validation dataset, surpassing all\nother state-of-the-art small object detection methods reported in the\nliterature, to the best of authors' knowledge.",
+        "published": "2022-03-24 10:43:56",
+        "updated": "2022-03-24 10:43:56",
+        "arxiv_id": "2203.12976v1",
+        "pdf_url": "http://arxiv.org/pdf/2203.12976v1",
+        "filtered": true,
+        "summary": "Focus-and-Detect, a two-stage framework for small object detection in aerial images, achieves high accuracy on the VisDrone validation dataset.",
+        "classification": "Specialized Object Detection"
+    },
+    {
+        "title": "CoTDet: Affordance Knowledge Prompting for Task Driven Object Detection",
+        "authors": [
+            "Jiajin Tang",
+            "Ge Zheng",
+            "Jingyi Yu",
+            "Sibei Yang"
+        ],
+        "abstract": "Task driven object detection aims to detect object instances suitable for\naffording a task in an image. Its challenge lies in object categories available\nfor the task being too diverse to be limited to a closed set of object\nvocabulary for traditional object detection. Simply mapping categories and\nvisual features of common objects to the task cannot address the challenge. In\nthis paper, we propose to explore fundamental affordances rather than object\ncategories, i.e., common attributes that enable different objects to accomplish\nthe same task. Moreover, we propose a novel multi-level chain-of-thought\nprompting (MLCoT) to extract the affordance knowledge from large language\nmodels, which contains multi-level reasoning steps from task to object examples\nto essential visual attributes with rationales. Furthermore, to fully exploit\nknowledge to benefit object recognition and localization, we propose a\nknowledge-conditional detection framework, namely CoTDet. It conditions the\ndetector from the knowledge to generate object queries and regress boxes.\nExperimental results demonstrate that our CoTDet outperforms state-of-the-art\nmethods consistently and significantly (+15.6 box AP and +14.8 mask AP) and can\ngenerate rationales for why objects are detected to afford the task.",
+        "published": "2023-09-03 06:18:39",
+        "updated": "2023-09-03 06:18:39",
+        "arxiv_id": "2309.01093v1",
+        "pdf_url": "http://arxiv.org/pdf/2309.01093v1",
+        "filtered": true,
+        "summary": "CoTDet, a knowledge-conditional detection framework for task-driven object detection, is proposed, significantly outperforming state-of-the-art methods.",
+        "classification": "Task-Driven Object Detection"
+    },
+    {
+        "title": "Track to Detect and Segment: An Online Multi-Object Tracker",
+        "authors": [
+            "Jialian Wu",
+            "Jiale Cao",
+            "Liangchen Song",
+            "Yu Wang",
+            "Ming Yang",
+            "Junsong Yuan"
+        ],
+        "abstract": "Most online multi-object trackers perform object detection stand-alone in a\nneural net without any input from tracking. In this paper, we present a new\nonline joint detection and tracking model, TraDeS (TRAck to DEtect and\nSegment), exploiting tracking clues to assist detection end-to-end. TraDeS\ninfers object tracking offset by a cost volume, which is used to propagate\nprevious object features for improving current object detection and\nsegmentation. Effectiveness and superiority of TraDeS are shown on 4 datasets,\nincluding MOT (2D tracking), nuScenes (3D tracking), MOTS and Youtube-VIS\n(instance segmentation tracking). Project page:\nhttps://jialianwu.com/projects/TraDeS.html.",
+        "published": "2021-03-16 02:34:06",
+        "updated": "2021-03-16 02:34:06",
+        "arxiv_id": "2103.08808v1",
+        "pdf_url": "http://arxiv.org/pdf/2103.08808v1",
+        "filtered": true,
+        "summary": "TraDeS, an online joint detection and tracking model, exploits tracking clues to improve object detection and segmentation in multiple datasets.",
+        "classification": "Video Object Detection"
+    },
+    {
+        "title": "False Detection (Positives and Negatives) in Object Detection",
+        "authors": [
+            "Subrata Goswami"
+        ],
+        "abstract": "Object detection is a very important function of visual perception systems.\nSince the early days of classical object detection based on HOG to modern deep\nlearning based detectors, object detection has improved in accuracy. Two stage\ndetectors usually have higher accuracy than single stage ones. Both types of\ndetectors use some form of quantization of the search space of rectangular\nregions of image. There are far more of the quantized elements than true\nobjects. The way these bounding boxes are filtered out possibly results in the\nfalse positive and false negatives. This empirical experimental study explores\nways of reducing false positives and negatives with labelled data.. In the\nprocess also discovered insufficient labelling in Openimage 2019 Object\nDetection dataset.",
+        "published": "2020-08-16 20:09:05",
+        "updated": "2020-08-16 20:09:05",
+        "arxiv_id": "2008.06986v1",
+        "pdf_url": "http://arxiv.org/pdf/2008.06986v1",
+        "filtered": true,
+        "summary": "An empirical study exploring ways to reduce false positives and negatives in object detection, discovering insufficient labeling in the OpenImage 2019 dataset.",
+        "classification": "Error Analysis"
+    },
+    {
+        "title": "Object grasping planning for the situation when soft and rigid objects are mixed together",
+        "authors": [
+            "Xiaoman Wang",
+            "Xin Jiang",
+            "Jie Zhao",
+            "Shengfan Wang",
+            "Yunhui Liu"
+        ],
+        "abstract": "In this paper, we propose a object detection method expressed as rotated\nbounding box to solve grasping challenge in the scenes where rigid objects and\nsoft objects are mixed together. Compared with traditional detection methods,\nthis method can output the angle information of rotated objects and thus can\nguarantee that within each rotated bounding box, there is a single instance.\nThis technology is especially useful in the case of pile of objects with\ndifferent orientations. In our method, when uncategorized objects with specific\ngeometry shapes (rectangle or cylinder) are detected, the program will conclude\nthat some rigid objects are covered by the towels. If no covered objects are\ndetected, the grasp planning is based on 3D point cloud obtained from the\nmapping between 2D object detection result and its corresponding 3D point\ncloud. Based on the information provided by the 3D bounding box covering the\nobject, grasping strategy for multiple cluttered rigid objects, collision\navoidance strategy are proposed. The proposed method is verified by the\nexperiment in which rigid objects and towels are mixed together.",
+        "published": "2019-09-20 14:41:38",
+        "updated": "2019-09-20 14:41:38",
+        "arxiv_id": "1909.09536v1",
+        "pdf_url": "http://arxiv.org/pdf/1909.09536v1",
+        "filtered": true,
+        "summary": "This paper proposes a rotated bounding box method for object detection to address grasping challenges when rigid and soft objects are mixed, focusing on angle information and single-instance guarantees within each bounding box.",
+        "classification": "Object Detection in Complex Scenes"
+    },
+    {
+        "title": "Towards Object Detection from Motion",
+        "authors": [
+            "Rico Jonschkowski",
+            "Austin Stone"
+        ],
+        "abstract": "We present a novel approach to weakly supervised object detection. Instead of\nannotated images, our method only requires two short videos to learn to detect\na new object: 1) a video of a moving object and 2) one or more \"negative\"\nvideos of the scene without the object. The key idea of our algorithm is to\ntrain the object detector to produce physically plausible object motion when\napplied to the first video and to not detect anything in the second video. With\nthis approach, our method learns to locate objects without any object location\nannotations. Once the model is trained, it performs object detection on single\nimages. We evaluate our method in three robotics settings that afford learning\nobjects from motion: observing moving objects, watching demonstrations of\nobject manipulation, and physically interacting with objects (see a video\nsummary at https://youtu.be/BH0Hv3zZG_4).",
+        "published": "2019-09-17 18:00:14",
+        "updated": "2019-09-17 18:00:14",
+        "arxiv_id": "1909.12950v1",
+        "pdf_url": "http://arxiv.org/pdf/1909.12950v1",
+        "filtered": true,
+        "summary": "The paper introduces a novel approach to weakly supervised object detection using motion from videos, requiring no object location annotations and leveraging physically plausible motion constraints.",
+        "classification": "Weakly Supervised Object Detection"
+    },
+    {
+        "title": "GUI Element Detection Using SOTA YOLO Deep Learning Models",
+        "authors": [
+            "Seyed Shayan Daneshvar",
+            "Shaowei Wang"
+        ],
+        "abstract": "Detection of Graphical User Interface (GUI) elements is a crucial task for\nautomatic code generation from images and sketches, GUI testing, and GUI\nsearch. Recent studies have leveraged both old-fashioned and modern computer\nvision (CV) techniques. Oldfashioned methods utilize classic image processing\nalgorithms (e.g. edge detection and contour detection) and modern methods use\nmature deep learning solutions for general object detection tasks. GUI element\ndetection, however, is a domain-specific case of object detection, in which\nobjects overlap more often, and are located very close to each other, plus the\nnumber of object classes is considerably lower, yet there are more objects in\nthe images compared to natural images. Hence, the studies that have been\ncarried out on comparing various object detection models, might not apply to\nGUI element detection. In this study, we evaluate the performance of the four\nmost recent successful YOLO models for general object detection tasks on GUI\nelement detection and investigate their accuracy performance in detecting\nvarious GUI elements.",
+        "published": "2024-08-07 02:18:39",
+        "updated": "2024-08-07 02:18:39",
+        "arxiv_id": "2408.03507v1",
+        "pdf_url": "http://arxiv.org/pdf/2408.03507v1",
+        "filtered": true,
+        "summary": "This study evaluates the performance of recent YOLO models for GUI element detection, addressing domain-specific challenges such as overlapping objects and fewer classes compared to general object detection tasks.",
+        "classification": "Object Detection in Specific Domains"
+    },
+    {
+        "title": "Leveraging Bottom-Up and Top-Down Attention for Few-Shot Object Detection",
+        "authors": [
+            "Xianyu Chen",
+            "Ming Jiang",
+            "Qi Zhao"
+        ],
+        "abstract": "Few-shot object detection aims at detecting objects with few annotated\nexamples, which remains a challenging research problem yet to be explored.\nRecent studies have shown the effectiveness of self-learned top-down attention\nmechanisms in object detection and other vision tasks. The top-down attention,\nhowever, is less effective at improving the performance of few-shot detectors.\nDue to the insufficient training data, object detectors cannot effectively\ngenerate attention maps for few-shot examples. To improve the performance and\ninterpretability of few-shot object detectors, we propose an attentive few-shot\nobject detection network (AttFDNet) that takes the advantages of both top-down\nand bottom-up attention. Being task-agnostic, the bottom-up attention serves as\na prior that helps detect and localize naturally salient objects. We further\naddress specific challenges in few-shot object detection by introducing two\nnovel loss terms and a hybrid few-shot learning strategy. Experimental results\nand visualization demonstrate the complementary nature of the two types of\nattention and their roles in few-shot object detection. Codes are available at\nhttps://github.com/chenxy99/AttFDNet.",
+        "published": "2020-07-23 16:12:04",
+        "updated": "2020-07-23 16:12:04",
+        "arxiv_id": "2007.12104v1",
+        "pdf_url": "http://arxiv.org/pdf/2007.12104v1",
+        "filtered": true,
+        "summary": "The paper proposes an attentive few-shot object detection network (AttFDNet) that combines top-down and bottom-up attention mechanisms to improve performance and interpretability in few-shot scenarios.",
+        "classification": "Few-Shot Object Detection"
+    },
+    {
+        "title": "Sparse Semi-DETR: Sparse Learnable Queries for Semi-Supervised Object Detection",
+        "authors": [
+            "Tahira Shehzadi",
+            "Khurram Azeem Hashmi",
+            "Didier Stricker",
+            "Muhammad Zeshan Afzal"
+        ],
+        "abstract": "In this paper, we address the limitations of the DETR-based semi-supervised\nobject detection (SSOD) framework, particularly focusing on the challenges\nposed by the quality of object queries. In DETR-based SSOD, the one-to-one\nassignment strategy provides inaccurate pseudo-labels, while the one-to-many\nassignments strategy leads to overlapping predictions. These issues compromise\ntraining efficiency and degrade model performance, especially in detecting\nsmall or occluded objects. We introduce Sparse Semi-DETR, a novel\ntransformer-based, end-to-end semi-supervised object detection solution to\novercome these challenges. Sparse Semi-DETR incorporates a Query Refinement\nModule to enhance the quality of object queries, significantly improving\ndetection capabilities for small and partially obscured objects. Additionally,\nwe integrate a Reliable Pseudo-Label Filtering Module that selectively filters\nhigh-quality pseudo-labels, thereby enhancing detection accuracy and\nconsistency. On the MS-COCO and Pascal VOC object detection benchmarks, Sparse\nSemi-DETR achieves a significant improvement over current state-of-the-art\nmethods that highlight Sparse Semi-DETR's effectiveness in semi-supervised\nobject detection, particularly in challenging scenarios involving small or\npartially obscured objects.",
+        "published": "2024-04-02 10:22:23",
+        "updated": "2024-04-02 10:22:23",
+        "arxiv_id": "2404.01819v1",
+        "pdf_url": "http://arxiv.org/pdf/2404.01819v1",
+        "filtered": true,
+        "summary": "This paper introduces Sparse Semi-DETR, a transformer-based semi-supervised object detection model that enhances query quality and pseudo-label filtering to improve detection accuracy, especially for small or occluded objects.",
+        "classification": "Semi-Supervised Object Detection"
+    },
+    {
+        "title": "Mask-based Invisible Backdoor Attacks on Object Detection",
+        "authors": [
+            "Jeongjin Shin"
+        ],
+        "abstract": "Deep learning models have achieved unprecedented performance in the domain of\nobject detection, resulting in breakthroughs in areas such as autonomous\ndriving and security. However, deep learning models are vulnerable to backdoor\nattacks. These attacks prompt models to behave similarly to standard models\nwithout a trigger; however, they act maliciously upon detecting a predefined\ntrigger. Despite extensive research on backdoor attacks in image\nclassification, their application to object detection remains relatively\nunderexplored. Given the widespread application of object detection in critical\nreal-world scenarios, the sensitivity and potential impact of these\nvulnerabilities cannot be overstated. In this study, we propose an effective\ninvisible backdoor attack on object detection utilizing a mask-based approach.\nThree distinct attack scenarios were explored for object detection: object\ndisappearance, object misclassification, and object generation attack. Through\nextensive experiments, we comprehensively examined the effectiveness of these\nattacks and tested certain defense methods to determine effective\ncountermeasures. Code will be available at\nhttps://github.com/jeongjin0/invisible-backdoor-object-detection",
+        "published": "2024-03-20 12:27:30",
+        "updated": "2024-06-04 11:28:42",
+        "arxiv_id": "2405.09550v3",
+        "pdf_url": "http://arxiv.org/pdf/2405.09550v3",
+        "filtered": true,
+        "summary": "The paper proposes a mask-based invisible backdoor attack on object detection, exploring three attack scenarios: object disappearance, misclassification, and generation, with comprehensive experiments and defense evaluations.",
+        "classification": "Adversarial Object Detection"
+    },
+    {
+        "title": "Prototype Embedding Optimization for Human-Object Interaction Detection in Livestreaming",
+        "authors": [
+            "Menghui Zhang",
+            "Jing Zhang",
+            "Lin Chen",
+            "Li Zhuo"
+        ],
+        "abstract": "Livestreaming often involves interactions between streamers and objects,\nwhich is critical for understanding and regulating web content. While\nhuman-object interaction (HOI) detection has made some progress in\ngeneral-purpose video downstream tasks, when applied to recognize the\ninteraction behaviors between a streamer and different objects in\nlivestreaming, it tends to focuses too much on the objects and neglects their\ninteractions with the streamer, which leads to object bias. To solve this\nissue, we propose a prototype embedding optimization for human-object\ninteraction detection (PeO-HOI). First, the livestreaming is preprocessed using\nobject detection and tracking techniques to extract features of the\nhuman-object (HO) pairs. Then, prototype embedding optimization is adopted to\nmitigate the effect of object bias on HOI. Finally, after modelling the\nspatio-temporal context between HO pairs, the HOI detection results are\nobtained by the prediction head. The experimental results show that the\ndetection accuracy of the proposed PeO-HOI method has detection accuracies of\n37.19%@full, 51.42%@non-rare, 26.20%@rare on the publicly available dataset\nVidHOI, 45.13%@full, 62.78%@non-rare and 30.37%@rare on the self-built dataset\nBJUT-HOI, which effectively improves the HOI detection performance in\nlivestreaming.",
+        "published": "2025-05-28 06:19:37",
+        "updated": "2025-05-28 06:19:37",
+        "arxiv_id": "2505.22011v1",
+        "pdf_url": "http://arxiv.org/pdf/2505.22011v1",
+        "filtered": true,
+        "summary": "This work presents PeO-HOI, a prototype embedding optimization method for human-object interaction detection in livestreaming, mitigating object bias and improving HOI detection performance.",
+        "classification": "Human-Object Interaction Detection"
+    },
+    {
+        "title": "DOD-CNN: Doubly-injecting Object Information for Event Recognition",
+        "authors": [
+            "Hyungtae Lee",
+            "Sungmin Eum",
+            "Heesung Kwon"
+        ],
+        "abstract": "Recognizing an event in an image can be enhanced by detecting relevant\nobjects in two ways: 1) indirectly utilizing object detection information\nwithin the unified architecture or 2) directly making use of the object\ndetection output results. We introduce a novel approach, referred to as\nDoubly-injected Object Detection CNN (DOD-CNN), exploiting the object\ninformation in both ways for the task of event recognition. The structure of\nthis network is inspired by the Integrated Object Detection CNN (IOD-CNN) where\nobject information is indirectly exploited by the event recognition module\nthrough the shared portion of the network. In the DOD-CNN architecture, the\nintermediate object detection outputs are directly injected into the event\nrecognition network while keeping the indirect sharing structure inherited from\nthe IOD-CNN, thus being `doubly-injected'. We also introduce a batch pooling\nlayer which constructs one representative feature map from multiple object\nhypotheses. We have demonstrated the effectiveness of injecting the object\ndetection information in two different ways in the task of malicious event\nrecognition.",
+        "published": "2018-11-07 14:44:17",
+        "updated": "2019-02-11 18:42:41",
+        "arxiv_id": "1811.02910v2",
+        "pdf_url": "http://arxiv.org/pdf/1811.02910v2",
+        "filtered": true,
+        "summary": "The paper introduces DOD-CNN, a network that exploits object detection information in two ways—indirectly through shared layers and directly via output injection—for event recognition tasks.",
+        "classification": "Event Recognition with Object Detection"
+    },
+    {
+        "title": "Seq-NMS for Video Object Detection",
+        "authors": [
+            "Wei Han",
+            "Pooya Khorrami",
+            "Tom Le Paine",
+            "Prajit Ramachandran",
+            "Mohammad Babaeizadeh",
+            "Honghui Shi",
+            "Jianan Li",
+            "Shuicheng Yan",
+            "Thomas S. Huang"
+        ],
+        "abstract": "Video object detection is challenging because objects that are easily\ndetected in one frame may be difficult to detect in another frame within the\nsame clip. Recently, there have been major advances for doing object detection\nin a single image. These methods typically contain three phases: (i) object\nproposal generation (ii) object classification and (iii) post-processing. We\npropose a modification of the post-processing phase that uses high-scoring\nobject detections from nearby frames to boost scores of weaker detections\nwithin the same clip. We show that our method obtains superior results to\nstate-of-the-art single image object detection techniques. Our method placed\n3rd in the video object detection (VID) task of the ImageNet Large Scale Visual\nRecognition Challenge 2015 (ILSVRC2015).",
+        "published": "2016-02-26 20:10:27",
+        "updated": "2016-08-22 23:16:49",
+        "arxiv_id": "1602.08465v3",
+        "pdf_url": "http://arxiv.org/pdf/1602.08465v3",
+        "filtered": true,
+        "summary": "This paper proposes Seq-NMS, a modification of the post-processing phase in video object detection that uses detections from nearby frames to boost weaker detections within the same clip.",
+        "classification": "Video Object Detection"
+    },
+    {
+        "title": "Object Detection in Specific Traffic Scenes using YOLOv2",
+        "authors": [
+            "Shouyu Wang",
+            "Weitao Tang"
+        ],
+        "abstract": "object detection framework plays crucial role in autonomous driving. In this\npaper, we introduce the real-time object detection framework called You Only\nLook Once (YOLOv1) and the related improvements of YOLOv2. We further explore\nthe capability of YOLOv2 by implementing its pre-trained model to do the object\ndetecting tasks in some specific traffic scenes. The four artificially designed\ntraffic scenes include single-car, single-person, frontperson-rearcar and\nfrontcar-rearperson.",
+        "published": "2019-05-12 16:38:19",
+        "updated": "2019-05-12 16:38:19",
+        "arxiv_id": "1905.04740v1",
+        "pdf_url": "http://arxiv.org/pdf/1905.04740v1",
+        "filtered": true,
+        "summary": "This paper explores the use of YOLOv2 for real-time object detection in specific traffic scenes, demonstrating its capability in detecting cars and people in various configurations.",
+        "classification": "Object Detection in Traffic Scenes"
+    },
+    {
+        "title": "Object DGCNN: 3D Object Detection using Dynamic Graphs",
+        "authors": [
+            "Yue Wang",
+            "Justin Solomon"
+        ],
+        "abstract": "3D object detection often involves complicated training and testing\npipelines, which require substantial domain knowledge about individual\ndatasets. Inspired by recent non-maximum suppression-free 2D object detection\nmodels, we propose a 3D object detection architecture on point clouds. Our\nmethod models 3D object detection as message passing on a dynamic graph,\ngeneralizing the DGCNN framework to predict a set of objects. In our\nconstruction, we remove the necessity of post-processing via object confidence\naggregation or non-maximum suppression. To facilitate object detection from\nsparse point clouds, we also propose a set-to-set distillation approach\ncustomized to 3D detection. This approach aligns the outputs of the teacher\nmodel and the student model in a permutation-invariant fashion, significantly\nsimplifying knowledge distillation for the 3D detection task. Our method\nachieves state-of-the-art performance on autonomous driving benchmarks. We also\nprovide abundant analysis of the detection model and distillation framework.",
+        "published": "2021-10-13 17:59:38",
+        "updated": "2021-10-13 17:59:38",
+        "arxiv_id": "2110.06923v1",
+        "pdf_url": "http://arxiv.org/pdf/2110.06923v1",
+        "filtered": true,
+        "summary": "The paper proposes Object DGCNN, a 3D object detection architecture using dynamic graphs and point clouds, removing the need for non-maximum suppression and achieving state-of-the-art performance in autonomous driving benchmarks.",
+        "classification": "3D Object Detection"
+    },
+    {
+        "title": "Detecting the unknown in Object Detection",
+        "authors": [
+            "Dario Fontanel",
+            "Matteo Tarantino",
+            "Fabio Cermelli",
+            "Barbara Caputo"
+        ],
+        "abstract": "Object detection methods have witnessed impressive improvements in the last\nyears thanks to the design of novel neural network architectures and the\navailability of large scale datasets. However, current methods have a\nsignificant limitation: they are able to detect only the classes observed\nduring training time, that are only a subset of all the classes that a detector\nmay encounter in the real world. Furthermore, the presence of unknown classes\nis often not considered at training time, resulting in methods not even able to\ndetect that an unknown object is present in the image. In this work, we address\nthe problem of detecting unknown objects, known as open-set object detection.\nWe propose a novel training strategy, called UNKAD, able to predict unknown\nobjects without requiring any annotation of them, exploiting non annotated\nobjects that are already present in the background of training images. In\nparticular, exploiting the four-steps training strategy of Faster R-CNN, UNKAD\nfirst identifies and pseudo-labels unknown objects and then uses the\npseudo-annotations to train an additional unknown class. While UNKAD can\ndirectly detect unknown objects, we further combine it with previous unknown\ndetection techniques, showing that it improves their performance at no costs.",
+        "published": "2022-08-24 16:27:38",
+        "updated": "2022-08-24 16:27:38",
+        "arxiv_id": "2208.11641v1",
+        "pdf_url": "http://arxiv.org/pdf/2208.11641v1",
+        "filtered": true,
+        "summary": "This work addresses the problem of detecting unknown objects in object detection, proposing UNKAD, a training strategy that predicts unknown objects without requiring their annotations during training.",
+        "classification": "Open-Set Object Detection"
+    },
+    {
+        "title": "Fast Quantum Convolutional Neural Networks for Low-Complexity Object Detection in Autonomous Driving Applications",
+        "authors": [
+            "Hankyul Baek",
+            "Donghyeon Kim",
+            "Joongheon Kim"
+        ],
+        "abstract": "Spurred by consistent advances and innovation in deep learning, object\ndetection applications have become prevalent, particularly in autonomous\ndriving that leverages various visual data. As convolutional neural networks\n(CNNs) are being optimized, the performances and computation speeds of object\ndetection in autonomous driving have been significantly improved. However, due\nto the exponentially rapid growth in the complexity and scale of data used in\nobject detection, there are limitations in terms of computation speeds while\nconducting object detection solely with classical computing. Motivated by this,\nquantum convolution-based object detection (QCOD) is proposed to adopt quantum\ncomputing to perform object detection at high speed. The QCOD utilizes our\nproposed fast quantum convolution that uploads input channel information and\nre-constructs output channels for achieving reduced computational complexity\nand thus improving performances. Lastly, the extensive experiments with KITTI\nautonomous driving object detection dataset verify that the proposed fast\nquantum convolution and QCOD are successfully operated in real object detection\napplications.",
+        "published": "2023-12-28 00:38:10",
+        "updated": "2023-12-28 00:38:10",
+        "arxiv_id": "2401.01370v1",
+        "pdf_url": "http://arxiv.org/pdf/2401.01370v1",
+        "filtered": true,
+        "summary": "This paper proposes fast quantum convolutional neural networks for low-complexity object detection in autonomous driving applications, utilizing quantum computing to achieve high-speed performance.",
+        "classification": "Quantum Object Detection"
+    },
+    {
+        "title": "Tracking Multiple Moving Objects Using Unscented Kalman Filtering Techniques",
+        "authors": [
+            "Xi Chen",
+            "Xiao Wang",
+            "Jianhua Xuan"
+        ],
+        "abstract": "It is an important task to reliably detect and track multiple moving objects\nfor video surveillance and monitoring. However, when occlusion occurs in\nnonlinear motion scenarios, many existing methods often fail to continuously\ntrack multiple moving objects of interest. In this paper we propose an\neffective approach for detection and tracking of multiple moving objects with\nocclusion. Moving targets are initially detected using a simple yet efficient\nblock matching technique, providing rough location information for multiple\nobject tracking. More accurate location information is then estimated for each\nmoving object by a nonlinear tracking algorithm. Considering the ambiguity\ncaused by the occlusion among multiple moving objects, we apply an unscented\nKalman filtering (UKF) technique for reliable object detection and tracking.\nDifferent from conventional Kalman filtering (KF), which cannot achieve the\noptimal estimation in nonlinear tracking scenarios, UKF can be used to track\nboth linear and nonlinear motions due to the unscented transform. Further, it\nestimates the velocity information for each object to assist to the object\ndetection algorithm, effectively delineating multiple moving objects of\nocclusion. The experimental results demonstrate that the proposed method can\ncorrectly detect and track multiple moving objects with nonlinear motion\npatterns and occlusions.",
+        "published": "2018-02-05 02:27:56",
+        "updated": "2018-02-05 02:27:56",
+        "arxiv_id": "1802.01235v1",
+        "pdf_url": "http://arxiv.org/pdf/1802.01235v1",
+        "filtered": true,
+        "summary": "The paper proposes an unscented Kalman filtering technique for reliable detection and tracking of multiple moving objects, even in nonlinear motion scenarios and occlusions.",
+        "classification": "Object Tracking"
+    },
+    {
+        "title": "Background Mixup Data Augmentation for Hand and Object-in-Contact Detection",
+        "authors": [
+            "Koya Tango",
+            "Takehiko Ohkawa",
+            "Ryosuke Furuta",
+            "Yoichi Sato"
+        ],
+        "abstract": "Detecting the positions of human hands and objects-in-contact (hand-object\ndetection) in each video frame is vital for understanding human activities from\nvideos. For training an object detector, a method called Mixup, which overlays\ntwo training images to mitigate data bias, has been empirically shown to be\neffective for data augmentation. However, in hand-object detection, mixing two\nhand-manipulation images produces unintended biases, e.g., the concentration of\nhands and objects in a specific region degrades the ability of the hand-object\ndetector to identify object boundaries. We propose a data-augmentation method\ncalled Background Mixup that leverages data-mixing regularization while\nreducing the unintended effects in hand-object detection. Instead of mixing two\nimages where a hand and an object in contact appear, we mix a target training\nimage with background images without hands and objects-in-contact extracted\nfrom external image sources, and use the mixed images for training the\ndetector. Our experiments demonstrated that the proposed method can effectively\nreduce false positives and improve the performance of hand-object detection in\nboth supervised and semi-supervised learning settings.",
+        "published": "2022-02-28 16:47:01",
+        "updated": "2022-03-01 02:33:16",
+        "arxiv_id": "2202.13941v2",
+        "pdf_url": "http://arxiv.org/pdf/2202.13941v2",
+        "filtered": true,
+        "summary": "This paper introduces Background Mixup, a data augmentation method for hand-object detection that reduces unintended biases by mixing target images with background images without hands or objects-in-contact.",
+        "classification": "Data Augmentation for Object Detection"
+    },
+    {
+        "title": "A Survey on Deep Domain Adaptation and Tiny Object Detection Challenges, Techniques and Datasets",
+        "authors": [
+            "Muhammed Muzammul",
+            "Xi Li"
+        ],
+        "abstract": "This survey paper specially analyzed computer vision-based object detection\nchallenges and solutions by different techniques. We mainly highlighted object\ndetection by three different trending strategies, i.e., 1) domain adaptive deep\nlearning-based approaches (discrepancy-based, Adversarial-based,\nReconstruction-based, Hybrid). We examined general as well as tiny object\ndetection-related challenges and offered solutions by historical and\ncomparative analysis. In part 2) we mainly focused on tiny object detection\ntechniques (multi-scale feature learning, Data augmentation, Training strategy\n(TS), Context-based detection, GAN-based detection). In part 3), To obtain\nknowledge-able findings, we discussed different object detection methods, i.e.,\nconvolutions and convolutional neural networks (CNN), pooling operations with\ntrending types. Furthermore, we explained results with the help of some object\ndetection algorithms, i.e., R-CNN, Fast R-CNN, Faster R-CNN, YOLO, and SSD,\nwhich are generally considered the base bone of CV, CNN, and OD. We performed\ncomparative analysis on different datasets such as MS-COCO, PASCAL VOC07,12,\nand ImageNet to analyze results and present findings. At the end, we showed\nfuture directions with existing challenges of the field. In the future, OD\nmethods and models can be analyzed for real-time object detection, tracking\nstrategies.",
+        "published": "2021-07-16 14:33:31",
+        "updated": "2021-07-16 14:33:31",
+        "arxiv_id": "2107.07927v1",
+        "pdf_url": "http://arxiv.org/pdf/2107.07927v1",
+        "filtered": true,
+        "summary": "This survey analyzes deep domain adaptation and tiny object detection challenges, techniques, and datasets, offering historical and comparative insights into object detection methods.",
+        "classification": "Survey on Object Detection"
+    },
+    {
+        "title": "Object Detection in Aerial Images with Uncertainty-Aware Graph Network",
+        "authors": [
+            "Jongha Kim",
+            "Jinheon Baek",
+            "Sung Ju Hwang"
+        ],
+        "abstract": "In this work, we propose a novel uncertainty-aware object detection framework\nwith a structured-graph, where nodes and edges are denoted by objects and their\nspatial-semantic similarities, respectively. Specifically, we aim to consider\nrelationships among objects for effectively contextualizing them. To achieve\nthis, we first detect objects and then measure their semantic and spatial\ndistances to construct an object graph, which is then represented by a graph\nneural network (GNN) for refining visual CNN features for objects. However,\nrefining CNN features and detection results of every object are inefficient and\nmay not be necessary, as that include correct predictions with low\nuncertainties. Therefore, we propose to handle uncertain objects by not only\ntransferring the representation from certain objects (sources) to uncertain\nobjects (targets) over the directed graph, but also improving CNN features only\non objects regarded as uncertain with their representational outputs from the\nGNN. Furthermore, we calculate a training loss by giving larger weights on\nuncertain objects, to concentrate on improving uncertain object predictions\nwhile maintaining high performances on certain objects. We refer to our model\nas Uncertainty-Aware Graph network for object DETection (UAGDet). We then\nexperimentally validate ours on the challenging large-scale aerial image\ndataset, namely DOTA, that consists of lots of objects with small to large\nsizes in an image, on which ours improves the performance of the existing\nobject detection network.",
+        "published": "2022-08-23 07:29:03",
+        "updated": "2022-08-24 05:45:37",
+        "arxiv_id": "2208.10781v2",
+        "pdf_url": "http://arxiv.org/pdf/2208.10781v2",
+        "filtered": true,
+        "summary": "The paper proposes UAGDet, an uncertainty-aware graph network for object detection in aerial images, refining CNN features and focusing on uncertain object predictions to improve overall performance.",
+        "classification": "Uncertainty-Aware Object Detection"
+    },
+    {
+        "title": "Bridging the Performance Gap between DETR and R-CNN for Graphical Object Detection in Document Images",
+        "authors": [
+            "Tahira Shehzadi",
+            "Khurram Azeem Hashmi",
+            "Didier Stricker",
+            "Marcus Liwicki",
+            "Muhammad Zeshan Afzal"
+        ],
+        "abstract": "This paper takes an important step in bridging the performance gap between\nDETR and R-CNN for graphical object detection. Existing graphical object\ndetection approaches have enjoyed recent enhancements in CNN-based object\ndetection methods, achieving remarkable progress. Recently, Transformer-based\ndetectors have considerably boosted the generic object detection performance,\neliminating the need for hand-crafted features or post-processing steps such as\nNon-Maximum Suppression (NMS) using object queries. However, the effectiveness\nof such enhanced transformer-based detection algorithms has yet to be verified\nfor the problem of graphical object detection. Essentially, inspired by the\nlatest advancements in the DETR, we employ the existing detection transformer\nwith few modifications for graphical object detection. We modify object queries\nin different ways, using points, anchor boxes and adding positive and negative\nnoise to the anchors to boost performance. These modifications allow for better\nhandling of objects with varying sizes and aspect ratios, more robustness to\nsmall variations in object positions and sizes, and improved image\ndiscrimination between objects and non-objects. We evaluate our approach on the\nfour graphical datasets: PubTables, TableBank, NTable and PubLaynet. Upon\nintegrating query modifications in the DETR, we outperform prior works and\nachieve new state-of-the-art results with the mAP of 96.9\\%, 95.7\\% and 99.3\\%\non TableBank, PubLaynet, PubTables, respectively. The results from extensive\nablations show that transformer-based methods are more effective for document\nanalysis analogous to other applications. We hope this study draws more\nattention to the research of using detection transformers in document image\nanalysis.",
+        "published": "2023-06-23 14:46:03",
+        "updated": "2023-06-23 14:46:03",
+        "arxiv_id": "2306.13526v1",
+        "pdf_url": "http://arxiv.org/pdf/2306.13526v1",
+        "filtered": true,
+        "summary": "This paper explores the use of DETR and R-CNN for graphical object detection in document images, modifying object queries to improve performance on datasets like PubTables and TableBank.",
+        "classification": "Object Detection in Specific Domains"
+    },
+    {
+        "title": "Perceptual Generative Adversarial Networks for Small Object Detection",
+        "authors": [
+            "Jianan Li",
+            "Xiaodan Liang",
+            "Yunchao Wei",
+            "Tingfa Xu",
+            "Jiashi Feng",
+            "Shuicheng Yan"
+        ],
+        "abstract": "Detecting small objects is notoriously challenging due to their low\nresolution and noisy representation. Existing object detection pipelines\nusually detect small objects through learning representations of all the\nobjects at multiple scales. However, the performance gain of such ad hoc\narchitectures is usually limited to pay off the computational cost. In this\nwork, we address the small object detection problem by developing a single\narchitecture that internally lifts representations of small objects to\n\"super-resolved\" ones, achieving similar characteristics as large objects and\nthus more discriminative for detection. For this purpose, we propose a new\nPerceptual Generative Adversarial Network (Perceptual GAN) model that improves\nsmall object detection through narrowing representation difference of small\nobjects from the large ones. Specifically, its generator learns to transfer\nperceived poor representations of the small objects to super-resolved ones that\nare similar enough to real large objects to fool a competing discriminator.\nMeanwhile its discriminator competes with the generator to identify the\ngenerated representation and imposes an additional perceptual requirement -\ngenerated representations of small objects must be beneficial for detection\npurpose - on the generator. Extensive evaluations on the challenging\nTsinghua-Tencent 100K and the Caltech benchmark well demonstrate the\nsuperiority of Perceptual GAN in detecting small objects, including traffic\nsigns and pedestrians, over well-established state-of-the-arts.",
+        "published": "2017-06-16 13:41:54",
+        "updated": "2017-06-20 14:38:43",
+        "arxiv_id": "1706.05274v2",
+        "pdf_url": "http://arxiv.org/pdf/1706.05274v2",
+        "filtered": true,
+        "summary": "The paper introduces Perceptual GAN, a model designed to enhance small object detection by generating super-resolved representations that mimic large objects, improving discriminability.",
+        "classification": "Specialized Object Detection Techniques"
+    },
+    {
+        "title": "Unsupervised Recognition of Unknown Objects for Open-World Object Detection",
+        "authors": [
+            "Ruohuan Fang",
+            "Guansong Pang",
+            "Lei Zhou",
+            "Xiao Bai",
+            "Jin Zheng"
+        ],
+        "abstract": "Open-World Object Detection (OWOD) extends object detection problem to a\nrealistic and dynamic scenario, where a detection model is required to be\ncapable of detecting both known and unknown objects and incrementally learning\nnewly introduced knowledge. Current OWOD models, such as ORE and OW-DETR, focus\non pseudo-labeling regions with high objectness scores as unknowns, whose\nperformance relies heavily on the supervision of known objects. While they can\ndetect the unknowns that exhibit similar features to the known objects, they\nsuffer from a severe label bias problem that they tend to detect all regions\n(including unknown object regions) that are dissimilar to the known objects as\npart of the background. To eliminate the label bias, this paper proposes a\nnovel approach that learns an unsupervised discriminative model to recognize\ntrue unknown objects from raw pseudo labels generated by unsupervised region\nproposal methods. The resulting model can be further refined by a\nclassification-free self-training method which iteratively extends pseudo\nunknown objects to the unlabeled regions. Experimental results show that our\nmethod 1) significantly outperforms the prior SOTA in detecting unknown objects\nwhile maintaining competitive performance of detecting known object classes on\nthe MS COCO dataset, and 2) achieves better generalization ability on the LVIS\nand Objects365 datasets.",
+        "published": "2023-08-31 08:17:29",
+        "updated": "2023-08-31 08:17:29",
+        "arxiv_id": "2308.16527v1",
+        "pdf_url": "http://arxiv.org/pdf/2308.16527v1",
+        "filtered": true,
+        "summary": "This study proposes an unsupervised method for recognizing unknown objects in open-world scenarios, addressing label bias issues in existing OWOD models and achieving superior performance on MS COCO.",
+        "classification": "Open-World Object Detection"
+    },
+    {
+        "title": "Tiny SSD: A Tiny Single-shot Detection Deep Convolutional Neural Network for Real-time Embedded Object Detection",
+        "authors": [
+            "Alexander Wong",
+            "Mohammad Javad Shafiee",
+            "Francis Li",
+            "Brendan Chwyl"
+        ],
+        "abstract": "Object detection is a major challenge in computer vision, involving both\nobject classification and object localization within a scene. While deep neural\nnetworks have been shown in recent years to yield very powerful techniques for\ntackling the challenge of object detection, one of the biggest challenges with\nenabling such object detection networks for widespread deployment on embedded\ndevices is high computational and memory requirements. Recently, there has been\nan increasing focus in exploring small deep neural network architectures for\nobject detection that are more suitable for embedded devices, such as Tiny YOLO\nand SqueezeDet. Inspired by the efficiency of the Fire microarchitecture\nintroduced in SqueezeNet and the object detection performance of the\nsingle-shot detection macroarchitecture introduced in SSD, this paper\nintroduces Tiny SSD, a single-shot detection deep convolutional neural network\nfor real-time embedded object detection that is composed of a highly optimized,\nnon-uniform Fire sub-network stack and a non-uniform sub-network stack of\nhighly optimized SSD-based auxiliary convolutional feature layers designed\nspecifically to minimize model size while maintaining object detection\nperformance. The resulting Tiny SSD possess a model size of 2.3MB (~26X smaller\nthan Tiny YOLO) while still achieving an mAP of 61.3% on VOC 2007 (~4.2% higher\nthan Tiny YOLO). These experimental results show that very small deep neural\nnetwork architectures can be designed for real-time object detection that are\nwell-suited for embedded scenarios.",
+        "published": "2018-02-19 01:57:46",
+        "updated": "2018-02-19 01:57:46",
+        "arxiv_id": "1802.06488v1",
+        "pdf_url": "http://arxiv.org/pdf/1802.06488v1",
+        "filtered": true,
+        "summary": "Tiny SSD is introduced as a compact, efficient single-shot detection network suitable for embedded devices, offering a balance between size and detection performance.",
+        "classification": "Efficient Object Detection"
+    },
+    {
+        "title": "Detect Only What You Specify : Object Detection with Linguistic Target",
+        "authors": [
+            "Moyuru Yamada"
+        ],
+        "abstract": "Object detection is a computer vision task of predicting a set of bounding\nboxes and category labels for each object of interest in a given image. The\ncategory is related to a linguistic symbol such as 'dog' or 'person' and there\nshould be relationships among them. However the object detector only learns to\nclassify the categories and does not treat them as the linguistic symbols.\nMulti-modal models often use the pre-trained object detector to extract object\nfeatures from the image, but the models are separated from the detector and the\nextracted visual features does not change with their linguistic input. We\nrethink the object detection as a vision-and-language reasoning task. We then\npropose targeted detection task, where detection targets are given by a natural\nlanguage and the goal of the task is to detect only all the target objects in a\ngiven image. There are no detection if the target is not given. Commonly used\nmodern object detectors have many hand-designed components like anchor and it\nis difficult to fuse the textual inputs into the complex pipeline. We thus\npropose Language-Targeted Detector (LTD) for the targeted detection based on a\nrecently proposed Transformer-based detector. LTD is a encoder-decoder\narchitecture and our conditional decoder allows the model to reason about the\nencoded image with the textual input as the linguistic context. We evaluate\ndetection performances of LTD on COCO object detection dataset and also show\nthat our model improves the detection results with the textual input grounding\nto the visual object.",
+        "published": "2022-11-18 07:28:47",
+        "updated": "2022-11-18 07:28:47",
+        "arxiv_id": "2211.11572v1",
+        "pdf_url": "http://arxiv.org/pdf/2211.11572v1",
+        "filtered": true,
+        "summary": "The paper rethinks object detection as a vision-and-language task, proposing Language-Targeted Detector (LTD) which uses natural language inputs to specify detection targets, enhancing detection with linguistic context.",
+        "classification": "Vision-Language Models"
+    },
+    {
+        "title": "Fast and Accurate Object Detection on Asymmetrical Receptive Field",
+        "authors": [
+            "Tianhao Lin"
+        ],
+        "abstract": "Object detection has been used in a wide range of industries. For example, in\nautonomous driving, the task of object detection is to accurately and\nefficiently identify and locate a large number of predefined classes of object\ninstances (vehicles, pedestrians, traffic signs, etc.) from videos of roads. In\nrobotics, the industry robot needs to recognize specific machine elements. In\nthe security field, the camera should accurately recognize each face of people.\nWith the wide application of deep learning, the accuracy and efficiency of\nobject detection have been greatly improved, but object detection based on deep\nlearning still faces challenges. Different applications of object detection\nhave different requirements, including highly accurate detection,\nmulti-category object detection, real-time detection, robustness to occlusions,\netc. To address the above challenges, based on extensive literature research,\nthis paper analyzes methods for improving and optimizing mainstream object\ndetection algorithms from the perspective of evolution of one-stage and\ntwo-stage object detection algorithms. Furthermore, this article proposes\nmethods for improving object detection accuracy from the perspective of\nchanging receptive fields. The new model is based on the original YOLOv5 (You\nLook Only Once) with some modifications. The structure of the head part of\nYOLOv5 is modified by adding asymmetrical pooling layers. As a result, the\naccuracy of the algorithm is improved while ensuring the speed. The\nperformances of the new model in this article are compared with original YOLOv5\nmodel and analyzed from several parameters. And the evaluation of the new model\nis presented in four situations. Moreover, the summary and outlooks are made on\nthe problems to be solved and the research directions in the future.",
+        "published": "2023-03-15 23:59:18",
+        "updated": "2024-08-08 09:40:29",
+        "arxiv_id": "2303.08995v2",
+        "pdf_url": "http://arxiv.org/pdf/2303.08995v2",
+        "filtered": true,
+        "summary": "This paper modifies YOLOv5 by adding asymmetrical pooling layers to improve accuracy while maintaining speed, presenting evaluations across various scenarios.",
+        "classification": "Efficient Object Detection"
+    },
+    {
+        "title": "Single Stage Class Agnostic Common Object Detection: A Simple Baseline",
+        "authors": [
+            "Chuong H. Nguyen",
+            "Thuy C. Nguyen",
+            "Anh H. Vo",
+            "Yamazaki Masayuki"
+        ],
+        "abstract": "This paper addresses the problem of common object detection, which aims to\ndetect objects of similar categories from a set of images. Although it shares\nsome similarities with the standard object detection and co-segmentation,\ncommon object detection, recently promoted by \\cite{Jiang2019a}, has some\nunique advantages and challenges. First, it is designed to work on both\nclosed-set and open-set conditions, a.k.a. known and unknown objects. Second,\nit must be able to match objects of the same category but not restricted to the\nsame instance, texture, or posture. Third, it can distinguish multiple objects.\nIn this work, we introduce the Single Stage Common Object Detection (SSCOD) to\ndetect class-agnostic common objects from an image set. The proposed method is\nbuilt upon the standard single-stage object detector. Furthermore, an embedded\nbranch is introduced to generate the object's representation feature, and their\nsimilarity is measured by cosine distance. Experiments are conducted on PASCAL\nVOC 2007 and COCO 2014 datasets. While being simple and flexible, our proposed\nSSCOD built upon ATSSNet performs significantly better than the baseline of the\nstandard object detection, while still be able to match objects of unknown\ncategories. Our source code can be found at\n\\href{https://github.com/cybercore-co-ltd/Single-Stage-Common-Object-Detection}{(URL)}",
+        "published": "2021-04-25 20:14:28",
+        "updated": "2021-04-25 20:14:28",
+        "arxiv_id": "2104.12245v1",
+        "pdf_url": "http://arxiv.org/pdf/2104.12245v1",
+        "filtered": true,
+        "summary": "SSCOD is proposed for class-agnostic common object detection, introducing an embedded branch for feature representation and demonstrating effectiveness on PASCAL VOC 2007 and COCO 2014.",
+        "classification": "Specialized Object Detection Techniques"
+    },
+    {
+        "title": "Fast detection of multiple objects in traffic scenes with a common detection framework",
+        "authors": [
+            "Qichang Hu",
+            "Sakrapee Paisitkriangkrai",
+            "Chunhua Shen",
+            "Anton van den Hengel",
+            "Fatih Porikli"
+        ],
+        "abstract": "Traffic scene perception (TSP) aims to real-time extract accurate on-road\nenvironment information, which in- volves three phases: detection of objects of\ninterest, recognition of detected objects, and tracking of objects in motion.\nSince recognition and tracking often rely on the results from detection, the\nability to detect objects of interest effectively plays a crucial role in TSP.\nIn this paper, we focus on three important classes of objects: traffic signs,\ncars, and cyclists. We propose to detect all the three important objects in a\nsingle learning based detection framework. The proposed framework consists of a\ndense feature extractor and detectors of three important classes. Once the\ndense features have been extracted, these features are shared with all\ndetectors. The advantage of using one common framework is that the detection\nspeed is much faster, since all dense features need only to be evaluated once\nin the testing phase. In contrast, most previous works have designed specific\ndetectors using different features for each of these objects. To enhance the\nfeature robustness to noises and image deformations, we introduce spatially\npooled features as a part of aggregated channel features. In order to further\nimprove the generalization performance, we propose an object subcategorization\nmethod as a means of capturing intra-class variation of objects. We\nexperimentally demonstrate the effectiveness and efficiency of the proposed\nframework in three detection applications: traffic sign detection, car\ndetection, and cyclist detection. The proposed framework achieves the\ncompetitive performance with state-of- the-art approaches on several benchmark\ndatasets.",
+        "published": "2015-10-12 02:30:22",
+        "updated": "2015-10-12 02:30:22",
+        "arxiv_id": "1510.03125v1",
+        "pdf_url": "http://arxiv.org/pdf/1510.03125v1",
+        "filtered": true,
+        "summary": "A common detection framework is proposed for fast detection of traffic signs, cars, and cyclists, leveraging shared dense features to enhance speed and robustness.",
+        "classification": "Object Detection in Specific Domains"
+    },
+    {
+        "title": "Object as Query: Lifting any 2D Object Detector to 3D Detection",
+        "authors": [
+            "Zitian Wang",
+            "Zehao Huang",
+            "Jiahui Fu",
+            "Naiyan Wang",
+            "Si Liu"
+        ],
+        "abstract": "3D object detection from multi-view images has drawn much attention over the\npast few years. Existing methods mainly establish 3D representations from\nmulti-view images and adopt a dense detection head for object detection, or\nemploy object queries distributed in 3D space to localize objects. In this\npaper, we design Multi-View 2D Objects guided 3D Object Detector (MV2D), which\ncan lift any 2D object detector to multi-view 3D object detection. Since 2D\ndetections can provide valuable priors for object existence, MV2D exploits 2D\ndetectors to generate object queries conditioned on the rich image semantics.\nThese dynamically generated queries help MV2D to recall objects in the field of\nview and show a strong capability of localizing 3D objects. For the generated\nqueries, we design a sparse cross attention module to force them to focus on\nthe features of specific objects, which suppresses interference from noises.\nThe evaluation results on the nuScenes dataset demonstrate the dynamic object\nqueries and sparse feature aggregation can promote 3D detection capability.\nMV2D also exhibits a state-of-the-art performance among existing methods. We\nhope MV2D can serve as a new baseline for future research. Code is available at\n\\url{https://github.com/tusen-ai/MV2D}.",
+        "published": "2023-01-06 04:08:20",
+        "updated": "2023-11-06 04:37:47",
+        "arxiv_id": "2301.02364v3",
+        "pdf_url": "http://arxiv.org/pdf/2301.02364v3",
+        "filtered": true,
+        "summary": "MV2D lifts 2D object detectors to multi-view 3D detection using dynamically generated object queries and sparse cross attention, achieving state-of-the-art results on nuScenes.",
+        "classification": "3D Object Detection"
+    },
+    {
+        "title": "A Comprehensive Study on Object Detection Techniques in Unconstrained Environments",
+        "authors": [
+            "Hrishitva Patel"
+        ],
+        "abstract": "Object detection is a crucial task in computer vision that aims to identify\nand localize objects in images or videos. The recent advancements in deep\nlearning and Convolutional Neural Networks (CNNs) have significantly improved\nthe performance of object detection techniques. This paper presents a\ncomprehensive study of object detection techniques in unconstrained\nenvironments, including various challenges, datasets, and state-of-the-art\napproaches. Additionally, we present a comparative analysis of the methods and\nhighlight their strengths and weaknesses. Finally, we provide some future\nresearch directions to further improve object detection in unconstrained\nenvironments.",
+        "published": "2023-04-11 15:45:03",
+        "updated": "2023-04-11 15:45:03",
+        "arxiv_id": "2304.05295v1",
+        "pdf_url": "http://arxiv.org/pdf/2304.05295v1",
+        "filtered": true,
+        "summary": "This paper provides a comprehensive analysis of object detection techniques in unconstrained environments, discussing challenges, datasets, and state-of-the-art methods.",
+        "classification": "Comprehensive Studies on Object Detection"
     }
 ]

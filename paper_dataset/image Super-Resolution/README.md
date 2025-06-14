@@ -50,7 +50,7 @@
 > arbitrary-scale super-resolution of pathology images. Extensive experiments on
 > two public datasets show that our method outperforms both existing fixed-scale
 > and arbitrary-scale algorithms. To the best of our knowledge, this is the first
-> work to achieve arbitrary-scale super-resolution in the field of pathology
+> work to achieve arbitrary-scale super-resolution in the field of pathology    
 > images. Codes will be available.
 
 ---

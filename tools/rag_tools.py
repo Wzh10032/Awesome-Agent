@@ -5,7 +5,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 def get_embedding():
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+    # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embeddings
 def get_vector_store(embeddings=None, persist_directory="./chroma_langchain_db"):    
     vector_store = Chroma(
@@ -24,7 +25,7 @@ async def load_pdf(file_path):
     return pages
 
 @tool
-def create_rag(paper_dir:str, persist_directory:str) -> str:
+def create_rag(paper_dir:str) -> str:
     """
     Creates a RAG (Retrieval-Augmented Generation) knowledge base by processing academic papers 
     and storing document embeddings in a vector database.
@@ -32,17 +33,18 @@ def create_rag(paper_dir:str, persist_directory:str) -> str:
     This function processes all PDF files in the specified directory, splits them into manageable 
     text chunks, embeds them using a pretrained model, and stores the results in a vector database. 
     If the target persist directory already exists, the operation is skipped.
+    The RAG database is stored in os.path.join(os.path.dirname(paper_dir), "chroma_langchain_db")
 
     Args:
-        paper_dir (str): Directory path containing PDF files to process.
-        persist_directory (str): Directory path where vector database will be stored. If this 
-            directory already exists, function returns a message indicating no action was taken.
-            It must be in the same directory as paper_dir and oftrn named as "chroma_langchain_db".
-
+        paper_dir (str): Directory path containing PDF files to process. such as "./paper_dataset/Object detection/pdfs"
 
     Returns:
         str: Success message indicating creation status, including directory location.
     """
+    if "pdfs" not in paper_dir:
+        persist_directory = os.path.join(paper_dir, "chroma_langchain_db")
+    else:
+        persist_directory = os.path.join(os.path.dirname(paper_dir), "chroma_langchain_db")
     if os.path.exists(persist_directory):
         return f"Vector store already exists at {persist_directory}. No need to create again."
     
@@ -88,3 +90,6 @@ def quary_rag(query:str, persist_directory:str) -> str:
     return "\nRetrieved documents:\n" + "".join(
         [f"\n\n===== Document {str(i)} =====\n" + doc.page_content for i, doc in enumerate(docs)]
     )
+
+if  __name__ == "__main__":
+    print(create_rag(".//paper_dataset//image Super-Resolution/pdfs", ".//paper_dataset//image Super-Resolution//chroma_langchain_db"))

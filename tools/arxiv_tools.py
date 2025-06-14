@@ -30,7 +30,7 @@ def arxiv_paper_search(topic: str, keywords: str) -> str:
         keywords (str): A string of keywords to search in the paper titles, separated by commas (e.g., 'quantum, computing').
     
     Returns:
-        str: Status message about the operation
+        str: paper_metadata_saved_path or "Data already exists"
     """
     result = fetch_arxiv_papers(topic, keywords)
     return result
@@ -47,7 +47,6 @@ def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
     返回:
     str: 操作状态信息
     """
-    print("33333333333333333")
     # 创建保存目录
     base_dir = ".\\paper_dataset"
     keyword_dir = os.path.join(base_dir, keywords)
@@ -85,6 +84,7 @@ def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
                 "arxiv_id": result.entry_id.split('/')[-1],
                 "pdf_url": result.pdf_url,
                 "filtered": False,  # 默认未过滤
+                "summary":"",
                 "classification": "",
             }
             new_papers.append(paper_info)
@@ -93,9 +93,9 @@ def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
         return f"获取数据时出错: {e}"
     
     # 查找该关键词目录下的所有JSON文件
-    existing_files = glob.glob(os.path.join(keyword_dir, "arxiv_papers_*.json"))
+    existing_files = glob.glob(os.path.join(keyword_dir, "*.json"))
     all_papers = []
-    
+    print(f"合并现有{len(existing_files)}个文件的数据...")
     # 读取并合并所有现有文件
     for file in existing_files:
         try:
@@ -126,22 +126,27 @@ def fetch_arxiv_papers(topic: str, keywords: str, max_results: int = 10) -> str:
         except Exception as e:
             print(f"删除旧文件 {file} 时出错: {e}")
     
-    return f"已将论文JSON保存在: {file_path}"
+    return f"{file_path}"
 
 @tool
-def download_arxiv_paper(paper_json_path:str) -> str:
+def download_arxiv_paper(paper_metadata_saved_path:str) -> str:
     """
-    Downloads the all PDF of a papers from meta data paper json file. save_dir = os.path.join(os.path.dirname(paper_json_path), "pdfs").
+    Downloads the all PDF of a papers from meta data paper json file. save_dir = os.path.join(os.path.dirname(paper_metadata_saved_path), "pdfs").
     
     Args:
-        paper_json_path (str): The path containing the papers information.
+        paper_metadata_saved_path (str): The path containing the papers information. The paper_metadata_saved_path can get it from return of arxiv_paper_search function.
+        such as :
+            paper_metadata_saved_path = arxiv_paper_search(topic="Computer Science", keywords="Object detection")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+            Step 2: Filter and classify the downloaded papers.                                                                                                                                                                          
+            filter_result = arxiv_paper_filter_and_classify(keywords="Object detection", research_content="Object detection", topic="")                                                                                                   
+            download_papers = download_arxiv_paper(paper_metadata_saved_path=paper_metadata_saved_path)
     
     Returns:
         str: A message indicating whether the download was successful or not.
     """
-    with open(paper_json_path, 'r') as json_file:
+    with open(paper_metadata_saved_path, 'r') as json_file:
         loaded_data = json.load(json_file)
-    save_dir = os.path.join(os.path.dirname(paper_json_path), "pdfs")
+    save_dir = os.path.join(os.path.dirname(paper_metadata_saved_path), "pdfs")
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     for paper in loaded_data:
@@ -251,6 +256,7 @@ def arxiv_paper_filter_and_classify(keywords: str, research_content: str, topic:
                 if result and result["relevant"]:
                     paper["filtered"] = True
                     paper["classification"] = result["classification"]
+                    paper["summary"] = result["summary"]
                     new_papers.append(paper)
                     kept_count += 1
                 else:
@@ -320,13 +326,15 @@ async def assess_batch_relevance(topic: str, keywords: str, batch: List[Dict]) -
         "1. 判断论文是否与研究主题或关键词相关\n"
         "2. 对相关论文进行大致分类，不要过细导致没有相同类别的文章，类别数大概为2-3个（如：'Multimodal Instruction Tuning','Multimodal Hallucination'）\n"
         "3. 不相关论文分类标记为'Unrelated'\n\n"
+        "4. 根据abstract和title，编写一段简短的summary\n"
         "返回格式要求：\n"
         "使用严格JSON格式，键为arxiv_id，值为包含两个字段的对象：\n"
         "- 'relevant': 布尔值（true/false）\n"
         "- 'classification': 字符串\n"
+        "- 'summary': 字符串\n"
         "示例：\n"
-        "{\"1234.56789\": {\"relevant\": true, \"classification\": \"Vision-Language Models\"}, "
-        "\"2345.67890\": {\"relevant\": false, \"classification\": \"Unrelated\"}}"
+        "{\"1234.56789\": {\"relevant\": true, \"classification\": \"Vision-Language Models\",  \"summary\": \"XXX XXX xXX\"}, "
+        "\"2345.67890\": {\"relevant\": false, \"classification\": \"Unrelated\", \"summary\": \"XXX XXX xXX\"}}"
     )
 
     # 构建用户提示
@@ -365,7 +373,8 @@ async def assess_batch_relevance(topic: str, keywords: str, batch: List[Dict]) -
             if isinstance(data, dict) and "relevant" in data and "classification" in data:
                 validated_results[arxiv_id] = {
                     "relevant": bool(data["relevant"]),
-                    "classification": data["classification"]
+                    "classification": data["classification"],
+                    "summary": data["summary"]
                 }
             else:
                 validated_results[arxiv_id] = {"relevant": False, "classification": "Invalid Format"}

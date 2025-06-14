@@ -1,0 +1,173 @@
+[
+    {
+        "title": "Detect-and-describe: Joint learning framework for detection and description of objects",
+        "authors": [
+            "Addel Zafar",
+            "Umar Khalid"
+        ],
+        "abstract": "Traditional object detection answers two questions; \"what\" (what the object\nis?) and \"where\" (where the object is?). \"what\" part of the object detection\ncan be fine-grained further i.e. \"what type\", \"what shape\" and \"what material\"\netc. This results in the shifting of the object detection tasks to the object\ndescription paradigm. Describing an object provides additional detail that\nenables us to understand the characteristics and attributes of the object\n(\"plastic boat\" not just boat, \"glass bottle\" not just bottle). This additional\ninformation can implicitly be used to gain insight into unseen objects (e.g.\nunknown object is \"metallic\", \"has wheels\"), which is not possible in\ntraditional object detection. In this paper, we present a new approach to\nsimultaneously detect objects and infer their attributes, we call it Detect and\nDescribe (DaD) framework. DaD is a deep learning-based approach that extends\nobject detection to object attribute prediction as well. We train our model on\naPascal train set and evaluate our approach on aPascal test set. We achieve\n97.0% in Area Under the Receiver Operating Characteristic Curve (AUC) for\nobject attributes prediction on aPascal test set. We also show qualitative\nresults for object attribute prediction on unseen objects, which demonstrate\nthe effectiveness of our approach for describing unknown objects.",
+        "published": "2022-04-19 11:57:30",
+        "updated": "2022-04-19 11:57:30",
+        "arxiv_id": "2204.08828v1",
+        "pdf_url": "http://arxiv.org/pdf/2204.08828v1",
+        "filtered": true,
+        "summary": "This paper introduces the Detect and Describe (DaD) framework, which extends traditional object detection by predicting detailed attributes of objects such as material and shape. The model is trained on aPascal and achieves high accuracy in attribute prediction, demonstrating its ability to describe unseen objects.",
+        "classification": "Object Attribute Prediction"
+    },
+    {
+        "title": "PROB: Probabilistic Objectness for Open World Object Detection",
+        "authors": [
+            "Orr Zohar",
+            "Kuan-Chieh Wang",
+            "Serena Yeung"
+        ],
+        "abstract": "Open World Object Detection (OWOD) is a new and challenging computer vision\ntask that bridges the gap between classic object detection (OD) benchmarks and\nobject detection in the real world. In addition to detecting and classifying\nseen/labeled objects, OWOD algorithms are expected to detect novel/unknown\nobjects - which can be classified and incrementally learned. In standard OD,\nobject proposals not overlapping with a labeled object are automatically\nclassified as background. Therefore, simply applying OD methods to OWOD fails\nas unknown objects would be predicted as background. The challenge of detecting\nunknown objects stems from the lack of supervision in distinguishing unknown\nobjects and background object proposals. Previous OWOD methods have attempted\nto overcome this issue by generating supervision using pseudo-labeling -\nhowever, unknown object detection has remained low. Probabilistic/generative\nmodels may provide a solution for this challenge. Herein, we introduce a novel\nprobabilistic framework for objectness estimation, where we alternate between\nprobability distribution estimation and objectness likelihood maximization of\nknown objects in the embedded feature space - ultimately allowing us to\nestimate the objectness probability of different proposals. The resulting\nProbabilistic Objectness transformer-based open-world detector, PROB,\nintegrates our framework into traditional object detection models, adapting\nthem for the open-world setting. Comprehensive experiments on OWOD benchmarks\nshow that PROB outperforms all existing OWOD methods in both unknown object\ndetection ($\\sim 2\\times$ unknown recall) and known object detection ($\\sim\n10\\%$ mAP). Our code will be made available upon publication at\nhttps://github.com/orrzohar/PROB.",
+        "published": "2022-12-02 20:04:24",
+        "updated": "2022-12-02 20:04:24",
+        "arxiv_id": "2212.01424v1",
+        "pdf_url": "http://arxiv.org/pdf/2212.01424v1",
+        "filtered": true,
+        "summary": "The paper presents PROB, a probabilistic framework for open-world object detection that distinguishes between unknown objects and background. It outperforms existing methods in detecting both known and unknown objects, bridging the gap between traditional benchmarks and real-world scenarios.",
+        "classification": "Open World Object Detection"
+    },
+    {
+        "title": "Towards Reflected Object Detection: A Benchmark",
+        "authors": [
+            "Zhongtian Wang",
+            "You Wu",
+            "Hui Zhou",
+            "Shuiwang Li"
+        ],
+        "abstract": "Object detection has greatly improved over the past decade thanks to advances\nin deep learning and large-scale datasets. However, detecting objects reflected\nin surfaces remains an underexplored area. Reflective surfaces are ubiquitous\nin daily life, appearing in homes, offices, public spaces, and natural\nenvironments. Accurate detection and interpretation of reflected objects are\nessential for various applications. This paper addresses this gap by\nintroducing a extensive benchmark specifically designed for Reflected Object\nDetection. Our Reflected Object Detection Dataset (RODD) features a diverse\ncollection of images showcasing reflected objects in various contexts,\nproviding standard annotations for both real and reflected objects. This\ndistinguishes it from traditional object detection benchmarks. RODD encompasses\n10 categories and includes 21,059 images of real and reflected objects across\ndifferent backgrounds, complete with standard bounding box annotations and the\nclassification of objects as real or reflected. Additionally, we present\nbaseline results by adapting five state-of-the-art object detection models to\naddress this challenging task. Experimental results underscore the limitations\nof existing methods when applied to reflected object detection, highlighting\nthe need for specialized approaches. By releasing RODD, we aim to support and\nadvance future research on detecting reflected objects. Dataset and code are\navailable at: https: //github.com/Tqybu-hans/RODD.",
+        "published": "2024-07-08 03:16:05",
+        "updated": "2024-07-08 03:16:05",
+        "arxiv_id": "2407.05575v1",
+        "pdf_url": "http://arxiv.org/pdf/2407.05575v1",
+        "filtered": true,
+        "summary": "This work introduces RODD, a benchmark dataset for reflected object detection. It includes diverse images with annotations for both real and reflected objects, highlighting limitations of current models and providing baselines for future research in this underexplored area.",
+        "classification": "Specialized Object Detection"
+    },
+    {
+        "title": "Context in object detection: a systematic literature review",
+        "authors": [
+            "Mahtab Jamali",
+            "Paul Davidsson",
+            "Reza Khoshkangini",
+            "Martin Georg Ljungqvist",
+            "Radu-Casian Mihailescu"
+        ],
+        "abstract": "Context is an important factor in computer vision as it offers valuable\ninformation to clarify and analyze visual data. Utilizing the contextual\ninformation inherent in an image or a video can improve the precision and\neffectiveness of object detectors. For example, where recognizing an isolated\nobject might be challenging, context information can improve comprehension of\nthe scene. This study explores the impact of various context-based approaches\nto object detection. Initially, we investigate the role of context in object\ndetection and survey it from several perspectives. We then review and discuss\nthe most recent context-based object detection approaches and compare them.\nFinally, we conclude by addressing research questions and identifying gaps for\nfurther studies. More than 265 publications are included in this survey,\ncovering different aspects of context in different categories of object\ndetection, including general object detection, video object detection, small\nobject detection, camouflaged object detection, zero-shot, one-shot, and\nfew-shot object detection. This literature review presents a comprehensive\noverview of the latest advancements in context-based object detection,\nproviding valuable contributions such as a thorough understanding of contextual\ninformation and effective methods for integrating various context types into\nobject detection, thus benefiting researchers.",
+        "published": "2025-03-29 23:21:28",
+        "updated": "2025-03-29 23:21:28",
+        "arxiv_id": "2503.23249v1",
+        "pdf_url": "http://arxiv.org/pdf/2503.23249v1",
+        "filtered": true,
+        "summary": "A systematic literature review exploring the role of context in object detection. The study surveys various context-based approaches, categorizing them into different types of object detection tasks, offering insights and identifying gaps for future research.",
+        "classification": "Contextual Object Detection"
+    },
+    {
+        "title": "Detecting out-of-context objects using contextual cues",
+        "authors": [
+            "Manoj Acharya",
+            "Anirban Roy",
+            "Kaushik Koneripalli",
+            "Susmit Jha",
+            "Christopher Kanan",
+            "Ajay Divakaran"
+        ],
+        "abstract": "This paper presents an approach to detect out-of-context (OOC) objects in an\nimage. Given an image with a set of objects, our goal is to determine if an\nobject is inconsistent with the scene context and detect the OOC object with a\nbounding box. In this work, we consider commonly explored contextual relations\nsuch as co-occurrence relations, the relative size of an object with respect to\nother objects, and the position of the object in the scene. We posit that\ncontextual cues are useful to determine object labels for in-context objects\nand inconsistent context cues are detrimental to determining object labels for\nout-of-context objects. To realize this hypothesis, we propose a graph\ncontextual reasoning network (GCRN) to detect OOC objects. GCRN consists of two\nseparate graphs to predict object labels based on the contextual cues in the\nimage: 1) a representation graph to learn object features based on the\nneighboring objects and 2) a context graph to explicitly capture contextual\ncues from the neighboring objects. GCRN explicitly captures the contextual cues\nto improve the detection of in-context objects and identify objects that\nviolate contextual relations. In order to evaluate our approach, we create a\nlarge-scale dataset by adding OOC object instances to the COCO images. We also\nevaluate on recent OCD benchmark. Our results show that GCRN outperforms\ncompetitive baselines in detecting OOC objects and correctly detecting\nin-context objects.",
+        "published": "2022-02-11 23:15:01",
+        "updated": "2022-02-11 23:15:01",
+        "arxiv_id": "2202.05930v1",
+        "pdf_url": "http://arxiv.org/pdf/2202.05930v1",
+        "filtered": true,
+        "summary": "The paper proposes GCRN, a graph contextual reasoning network for detecting out-of-context objects. It uses contextual cues from neighboring objects to improve detection accuracy, evaluated on a large-scale dataset created by adding OOC objects to COCO images.",
+        "classification": "Contextual Object Detection"
+    },
+    {
+        "title": "A Coarse to Fine Framework for Object Detection in High Resolution Image",
+        "authors": [
+            "Jinyan Liu",
+            "Jie Chen"
+        ],
+        "abstract": "Object detection is a fundamental problem in computer vision, aiming at\nlocating and classifying objects in image. Although current devices can easily\ntake very high-resolution images, current approaches of object detection seldom\nconsider detecting tiny object or the large scale variance problem in high\nresolution images. In this paper, we introduce a simple yet efficient approach\nthat improves accuracy of object detection especially for small objects and\nlarge scale variance scene while reducing the computational cost in high\nresolution image. Inspired by observing that overall detection accuracy is\nreduced if the image is properly down-sampled but the recall rate is not\nsignificantly reduced. Besides, small objects can be better detected by\ninputting high-resolution images even if using lightweight detector. We propose\na cluster-based coarse-to-fine object detection framework to enhance the\nperformance for detecting small objects while ensure the accuracy of large\nobjects in high-resolution images. For the first stage, we perform coarse\ndetection on the down-sampled image and center localization of small objects by\nlightweight detector on high-resolution image, and then obtains image chips\nbased on cluster region generation method by coarse detection and center\nlocalization results, and further sends chips to the second stage detector for\nfine detection. Finally, we merge the coarse detection and fine detection\nresults. Our approach can make good use of the sparsity of the objects and the\ninformation in high-resolution image, thereby making the detection more\nefficient. Experiment results show that our proposed approach achieves\npromising performance compared with other state-of-the-art detectors.",
+        "published": "2023-03-02 13:04:33",
+        "updated": "2023-03-02 13:04:33",
+        "arxiv_id": "2303.01219v1",
+        "pdf_url": "http://arxiv.org/pdf/2303.01219v1",
+        "filtered": true,
+        "summary": "This paper introduces a coarse-to-fine framework for object detection in high-resolution images. It enhances small object detection while maintaining accuracy for larger objects, using a two-stage approach with down-sampled images and high-resolution chips.",
+        "classification": "Specialized Object Detection"
+    },
+    {
+        "title": "TrackNet: Simultaneous Object Detection and Tracking and Its Application in Traffic Video Analysis",
+        "authors": [
+            "Chenge Li",
+            "Gregory Dobler",
+            "Xin Feng",
+            "Yao Wang"
+        ],
+        "abstract": "Object detection and object tracking are usually treated as two separate\nprocesses. Significant progress has been made for object detection in 2D images\nusing deep learning networks. The usual tracking-by-detection pipeline for\nobject tracking requires that the object is successfully detected in the first\nframe and all subsequent frames, and tracking is done by associating detection\nresults. Performing object detection and object tracking through a single\nnetwork remains a challenging open question. We propose a novel network\nstructure named trackNet that can directly detect a 3D tube enclosing a moving\nobject in a video segment by extending the faster R-CNN framework. A Tube\nProposal Network (TPN) inside the trackNet is proposed to predict the\nobjectness of each candidate tube and location parameters specifying the\nbounding tube. The proposed framework is applicable for detecting and tracking\nany object and in this paper, we focus on its application for traffic video\nanalysis. The proposed model is trained and tested on UA-DETRAC, a large\ntraffic video dataset available for multi-vehicle detection and tracking, and\nobtained very promising results.",
+        "published": "2019-02-04 21:39:17",
+        "updated": "2019-02-04 21:39:17",
+        "arxiv_id": "1902.01466v1",
+        "pdf_url": "http://arxiv.org/pdf/1902.01466v1",
+        "filtered": true,
+        "summary": "TrackNet is proposed for simultaneous object detection and tracking in videos. It extends Faster R-CNN to predict 3D tubes enclosing moving objects, achieving promising results on the UA-DETRAC traffic video dataset.",
+        "classification": "Video Object Detection"
+    },
+    {
+        "title": "Plug & Play Convolutional Regression Tracker for Video Object Detection",
+        "authors": [
+            "Ye Lyu",
+            "Michael Ying Yang",
+            "George Vosselman",
+            "Gui-Song Xia"
+        ],
+        "abstract": "Video object detection targets to simultaneously localize the bounding boxes\nof the objects and identify their classes in a given video. One challenge for\nvideo object detection is to consistently detect all objects across the whole\nvideo. As the appearance of objects may deteriorate in some frames, features or\ndetections from the other frames are commonly used to enhance the prediction.\nIn this paper, we propose a Plug & Play scale-adaptive convolutional regression\ntracker for the video object detection task, which could be easily and\ncompatibly implanted into the current state-of-the-art detection networks. As\nthe tracker reuses the features from the detector, it is a very light-weighted\nincrement to the detection network. The whole network performs at the speed\nclose to a standard object detector. With our new video object detection\npipeline design, image object detectors can be easily turned into efficient\nvideo object detectors without modifying any parameters. The performance is\nevaluated on the large-scale ImageNet VID dataset. Our Plug & Play design\nimproves mAP score for the image detector by around 5% with only little speed\ndrop.",
+        "published": "2020-03-02 15:57:55",
+        "updated": "2020-03-02 15:57:55",
+        "arxiv_id": "2003.00981v1",
+        "pdf_url": "http://arxiv.org/pdf/2003.00981v1",
+        "filtered": true,
+        "summary": "A Plug & Play convolutional regression tracker is introduced for video object detection. It reuses features from the detector, improving mAP scores with minimal speed reduction, evaluated on the ImageNet VID dataset.",
+        "classification": "Video Object Detection"
+    },
+    {
+        "title": "Recent Advances in Deep Learning for Object Detection",
+        "authors": [
+            "Xiongwei Wu",
+            "Doyen Sahoo",
+            "Steven C. H. Hoi"
+        ],
+        "abstract": "Object detection is a fundamental visual recognition problem in computer\nvision and has been widely studied in the past decades. Visual object detection\naims to find objects of certain target classes with precise localization in a\ngiven image and assign each object instance a corresponding class label. Due to\nthe tremendous successes of deep learning based image classification, object\ndetection techniques using deep learning have been actively studied in recent\nyears. In this paper, we give a comprehensive survey of recent advances in\nvisual object detection with deep learning. By reviewing a large body of recent\nrelated work in literature, we systematically analyze the existing object\ndetection frameworks and organize the survey into three major parts: (i)\ndetection components, (ii) learning strategies, and (iii) applications &\nbenchmarks. In the survey, we cover a variety of factors affecting the\ndetection performance in detail, such as detector architectures, feature\nlearning, proposal generation, sampling strategies, etc. Finally, we discuss\nseveral future directions to facilitate and spur future research for visual\nobject detection with deep learning. Keywords: Object Detection, Deep Learning,\nDeep Convolutional Neural Networks",
+        "published": "2019-08-10 02:54:17",
+        "updated": "2019-08-10 02:54:17",
+        "arxiv_id": "1908.03673v1",
+        "pdf_url": "http://arxiv.org/pdf/1908.03673v1",
+        "filtered": true,
+        "summary": "This survey provides an overview of recent advances in deep learning-based object detection. It analyzes detection frameworks, learning strategies, and applications, covering factors like detector architectures and feature learning.",
+        "classification": "Comprehensive Survey"
+    },
+    {
+        "title": "Out-of-Distribution Detection for LiDAR-based 3D Object Detection",
+        "authors": [
+            "Chengjie Huang",
+            "Van Duong Nguyen",
+            "Vahdat Abdelzad",
+            "Christopher Gus Mannes",
+            "Luke Rowe",
+            "Benjamin Therien",
+            "Rick Salay",
+            "Krzysztof Czarnecki"
+        ],
+        "abstract": "3D object detection is an essential part of automated driving, and deep\nneural networks (DNNs) have achieved state-of-the-art performance for this\ntask. However, deep models are notorious for assigning high confidence scores\nto out-of-distribution (OOD) inputs, that is, inputs that are not drawn from\nthe training distribution. Detecting OOD inputs is challenging and essential\nfor the safe deployment of models. OOD detection has been studied extensively\nfor the classification task, but it has not received enough attention for the\nobject detection task, specifically LiDAR-based 3D object detection. In this\npaper, we focus on the detection of OOD inputs for LiDAR-based 3D object\ndetection. We formulate what OOD inputs mean for object detection and propose\nto adapt several OOD detection methods for object detection. We accomplish this\nby our proposed feature extraction method. To evaluate OOD detection methods,\nwe develop a simple but effective technique of generating OOD objects for a\ngiven object detection model. Our evaluation based on the KITTI dataset shows\nthat different OOD detection methods have biases toward detecting specific OOD\nobjects. It emphasizes the importance of combined OOD detection methods and\nmore research in this direction.",
+        "published": "2022-09-28 21:39:25",
+        "updated": "2022-09-28 21:39:25",
+        "arxiv_id": "2209.14435v1",
+        "pdf_url": "http://arxiv.org/pdf/2209.14435v1",
+        "filtered": true,
+        "summary": "The paper focuses on out-of-distribution detection for LiDAR-based 3D object detection. It adapts OOD detection methods to this task, proposing a feature extraction method and evaluating them on the KITTI dataset.",
+        "classification": "Specialized Object Detection"
+    }
+]

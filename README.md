@@ -25,7 +25,11 @@ python main.py
 ```bash
 python gradio_gui_show.py
 ```
-修改fetch_arxiv_papers函数中的max_results参数，可以修改爬取的论文数量。
+定时执行
+```bash
+crontab -e
+00 8 * * * python main.py >> logfile.log 2>&1
+```
 
 ## 运行结果
 <img src=".\assets\result.png" width="800">
